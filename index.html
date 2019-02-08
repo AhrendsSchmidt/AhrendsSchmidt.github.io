@@ -264,6 +264,206 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/08/机器学习入门-python基础/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Han">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Google-hack">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/08/机器学习入门-python基础/" itemprop="url">机器学习入门(python基础-1)</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-08T19:16:47+08:00">
+                2019-02-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/Machine-learning/" itemprop="url" rel="index">
+                    <span itemprop="name">Machine learning</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/02/08/机器学习入门-python基础/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/02/08/机器学习入门-python基础/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  1.6k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  5
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="1-Python是什么"><a href="#1-Python是什么" class="headerlink" title="1.Python是什么"></a>1.Python是什么</h2><p>​    Python是一个简单、易读、易记的编程语言，而且是开源的，可以免 费地自由使用。Python可以用类似英语的语法编写程序，编译起来也不费 力，因此我们可以很轻松地使用Python。特别是对首次接触编程的人士来说， Python是最合适不过的语言。<br>在科学领域，特别是在机器学习、数据科学领域，Python也被 大量使用。Python除了高性能之外，凭借着NumPy、SciPy等优秀的数 值计算、统计分析库，在数据科学领域占有不可动摇的地位。深度学习的 框架中也有很多使用Python的场景，比如Caffe、TensorFlow、Chainer、 Theano等著名的深度学习框架都提供了Python接口。因此，学习Python 对使用深度学习框架大有益处。<br>综上，Python是最适合数据科学领域的编程语言。</p>
+<h2 id="2-Python的安装"><a href="#2-Python的安装" class="headerlink" title="2.Python的安装"></a>2.Python的安装</h2><p>​    Python有Python 2.x和Python 3.x两个版本。如果我们调查一下目前 Python的使用情况，会发现除了最新的版本3.x以外，旧的版本2.x仍在被大量使用。因此，在安装Python时，需要慎重选择安装Python的哪个版 本。这是因为两个版本之间没有兼容性（严格地讲，是没有“向后兼容性”)，也就是说，会发生用Python 3.x写的代码不能被Python 2.x执行的情况。<br>Python的安装方法有很多种，你可以选择安装包、压缩包进行安装。这里推荐的是用Anaconda这个发行版，里面集成了很多库，<a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/" target="_blank" rel="noopener">点击跳转至下载</a>，安装过程在此略过，没什么好说的。</p>
+<h2 id="3-Python解释器"><a href="#3-Python解释器" class="headerlink" title="3.Python解释器"></a>3.Python解释器</h2><p>完成Python的安装后，要先确认一下Python的版本。打开终端（Windows 中的命令行窗口），输入python --version命令，该命令会输出已经安装的 Python的版本信息。如下图，（已经安装好 了python的其他版本）<br><img src="https://s2.ax1x.com/2019/02/08/kN3qtU.png" alt="kN3qtU.png"><br>如上所示，显示了Python 3.6.5（根据实际安装的版本，版本号可能不同)， 说明已正确安装了Python 3.x。接着输入python，启动Python解释器。如下图，<br><img src="https://s2.ax1x.com/2019/02/08/kN3vc9.png" alt="kN3vc9.png"><br>    Python解释器也被称为“对话模式”，用户能够以和Python对话的方式 进行编程。<br>    利用解释器，你可以完成算术计算。如下图<br><img src="https://s2.ax1x.com/2019/02/08/kN3smt.png" alt="kN3smt.png"><br>*表示乘法，/表示除法，<strong>表示乘方（3</strong>2是3的2次方）。另外，在 Python 2.x中，整数除以整数的结果是整数，比如，7÷5的结果是1。但在 Python 3.x中，整数除以整数的结果是小数（浮点数）。</p>
+<h3 id="3-1-Python数据类型"><a href="#3-1-Python数据类型" class="headerlink" title="3.1 Python数据类型"></a>3.1 Python数据类型</h3><pre><code>Python作为一种高级语言，有5个标准的数据类型：Numbers(数字)、String(字符串)、List(列表)、Tuple(元组)、Dictionary(字典)，在此不一一介绍。Python提供了内置函数Type()来判断数据类型。如下图，
+</code></pre><p><img src="https://s2.ax1x.com/2019/02/08/kN8ogH.png" alt="kN8ogH.png"></p>
+<h3 id="3-2-Python变量类型"><a href="#3-2-Python变量类型" class="headerlink" title="3.2 Python变量类型"></a>3.2 Python变量类型</h3><p><strong>变量赋值</strong><br>Python 中的变量赋值不需要类型声明。<br>每个变量在内存中创建，都包括变量的标识，名称和数据这些信息。<br>每个变量在使用前都必须赋值，变量赋值以后该变量才会被创建。<br>等号（=）用来给变量赋值。<br>等号（=）运算符左边是一个变量名,等号（=）运算符右边是存储在变量中的值。<br><img src="https://s2.ax1x.com/2019/02/08/kNJCWD.png" alt="kNJCWD.png"><br><strong>多个变量赋值</strong><br>Python允许你同时为多个变量赋值，例如：<br><img src="https://s2.ax1x.com/2019/02/08/kNJ2tK.png" alt="kNJ2tK.png"><br>您也可以为多个对象指定多个变量，例如：<br><img src="https://s2.ax1x.com/2019/02/08/kNJ46H.png" alt="kNJ46H.png"></p>
+<h4 id="Python数字"><a href="#Python数字" class="headerlink" title="Python数字"></a>Python数字</h4><p>数字数据类型用于存储数值。<br>他们是不可改变的数据类型，这意味着改变数字数据类型会分配一个新的对象。<br>当你指定一个值时，Number对象就会被创建：<br>        var1 = 1<br>        var2 = 10<br>您也可以使用del语句删除一些对象的引用。<br>del语句的语法是：<br>        del var1[,var2[,var3[….,varN]]]]<br>您可以通过使用del语句删除单个或多个对象的引用。例如：<br>        del var<br>        del var_a, var_b<br>Python支持四种不同的数字类型：</p>
+<ul>
+<li>int（有符号整型）</li>
+<li>long（长整型[也可以代表八进制和十六进制]<del>long 类型只存在于 Python2.X 版本中</del></li>
+<li>float（浮点型）</li>
+<li>complex（复数）<h4 id="Python字符串"><a href="#Python字符串" class="headerlink" title="Python字符串"></a>Python字符串</h4>字符串或串(String)是由数字、字母、下划线组成的一串字符。一般记为 :<pre><code>s=&quot;a1a2···an&quot;(n&gt;=0)
+</code></pre>python的字串列表有2种取值顺序:<ul>
+<li>从左到右索引默认0开始的，最大范围是字符串长度减1</li>
+<li>从右到左索引默认-1开始的，最大范围是字符串开头<br>如果你要实现从字符串中获取一段子字符串的话，可以使用 [头下标:尾下标] 来截取相应的字符串，其中下标是从 0 开始算起，可以是正数或负数，下标可以为空表示取到头或尾。<br>[头下标:尾下标] 获取的子字符串包含头下标的字符，但不包含尾下标的字符。如下图，<br><img src="https://s2.ax1x.com/2019/02/08/kNYtud.png" alt="kNYtud.png"><h4 id="Python列表"><a href="#Python列表" class="headerlink" title="Python列表"></a>Python列表</h4>List（列表） 是 Python 中使用最频繁的数据类型。<br>列表可以完成大多数集合类的数据结构实现。它支持字符，数字，字符串甚至可以包含列表（即嵌套）。<br>列表用 [ ] 标识，是 python 最通用的复合数据类型。<br>列表中值的切割也可以用到变量 [头下标:尾下标] ，就可以截取相应的列表，从左到右索引默认 0 开始，从右到左索引默认 -1 开始，下标可以为空表示取到头或尾。如下图，<br><img src="https://s2.ax1x.com/2019/02/08/kNYXUx.png" alt="kNYXUx.png"><h4 id="Python元组"><a href="#Python元组" class="headerlink" title="Python元组"></a>Python元组</h4>元组是另一个数据类型，类似于 List（列表）。<br>元组用 () 标识。内部元素用逗号隔开。但是<strong>元组不能二次赋值</strong>，相当于只读列表。<br>如下图，<br><img src="https://s2.ax1x.com/2019/02/08/kNNiSU.png" alt="kNNiSU.png"><h4 id="Python字典"><a href="#Python字典" class="headerlink" title="Python字典"></a>Python字典</h4>字典(dictionary)是除列表以外python之中最灵活的内置数据结构类型。列表是有序的对象集合，字典是无序的对象集合。<br>两者之间的区别在于：字典当中的元素是通过键来存取的，而不是通过偏移存取。<br>字典用”{ }”标识。字典由索引(key)和它对应的值value组成。如下图，<br><img src="https://s2.ax1x.com/2019/02/08/kNtBZR.png" alt="kNtBZR.png"></li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/07/渗透测试之工具篇-1/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -733,7 +933,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  0
+                  111
                 </span>
               
 
@@ -771,12 +971,17 @@
 
       
         
-          
-            
-          
+          <p>Brief Introduction：最近这几年IT界什么最火，机器学习啊。笔者算是也在学习机器学习吧，无奈实在有点难度，数学知识跟不上，学了好久丝毫没有进展。
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/02/06/机器学习/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
-    </div>
+    </p></div>
     
     
     
@@ -1925,189 +2130,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/06/爬虫/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Han">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Google-hack">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/02/06/爬虫/" itemprop="url">爬虫</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-06T10:46:32+08:00">
-                2019-02-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/爬虫开发/" itemprop="url" rel="index">
-                    <span itemprop="name">爬虫开发</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2019/02/06/爬虫/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/02/06/爬虫/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Words count in article&#58;</span>
-                
-                <span title="Words count in article">
-                  65
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Brief Introduction：这个模块我将会记录我在开发sider的路上踩到的坑，以及入门爬虫需要的知识和一些好的spider框架，<strong>该模块会持续更新。。。</strong>喜欢开发spider的小伙伴可以一起交流。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2160,7 +2182,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -2289,7 +2311,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">2.6k</span>
+    <span title="Site words total count">4.3k</span>
   
 </div>
 
