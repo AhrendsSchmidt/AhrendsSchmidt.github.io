@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>github博客失联肿么办~</title>
+    <url>/2020/03/21/github%E5%8D%9A%E5%AE%A2%E5%A4%B1%E8%81%94%E8%82%BF%E4%B9%88%E5%8A%9E/</url>
+    <content><![CDATA[<p>你有没有这种经历，电脑被格式化了，之前生成的github的公钥没了，和github远程仓库就此失联了？<a id="more"></a>这种事情，我遇到不止一次了，之前遇到都是别人帮我解决的，到头来我还是不会，<strong>就在昨天</strong>，我想到了网络安全学的公私钥加密，既然我本地没了，我可以在生成一个吗！然后把GitHub仓库里面之前的公钥给删了重新换新的公钥不就好了吗。说干就干</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure>
+<p>一顿默认操作确认后，去生成密钥的目录找到id_rsa.pub这个文件，把里面的内容复制到GitHub的ssh认证那一栏，之后就可以愉快的进行hexo g &amp;&amp; hexo d了。</p>
+<p><strong>have a good time!</strong></p>
+]]></content>
+      <categories>
+        <category>那些年踩过的坑</category>
+      </categories>
+      <tags>
+        <tag>踩坑日志</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>test</title>
+    <url>/2020/03/21/test/</url>
+    <content><![CDATA[<p><strong>时隔好久，博客再次满血复活，哈哈哈哈哈</strong><a id="more"></a> </p>
+<p>上次博客更新还是2019年，如今已经2020年了，整整过去一年多了，从今往后，我会坚持每天写博客的，这样学过的东西才不容易忘记。而且我已经不是一年前的我了，<del>虽然我还是依旧辣么菜</del>。five话不多说了，明天开始正式写博客，时候也不早， 晚安~~</p>
+]]></content>
+      <categories>
+        <category>test</category>
+      </categories>
+      <tags>
+        <tag>博客测试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>渗透测试之工具篇-2</title>
+    <url>/2019/03/20/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%B9%8B%E5%B7%A5%E5%85%B7%E7%AF%87-2/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>网络安全</category>
+      </categories>
+      <tags>
+        <tag>Penetration test</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>渗透测试-xss安全汇总</title>
+    <url>/2019/02/23/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95-xss%E5%AE%89%E5%85%A8%E6%B1%87%E6%80%BB/</url>
+    <content><![CDATA[<h2 id="xss老漏洞了，危害可大可小。：）"><a href="#xss老漏洞了，危害可大可小。：）" class="headerlink" title="xss老漏洞了，危害可大可小。：）"></a>xss老漏洞了，危害可大可小。：）</h2><a id="more"></a>
+<p>直接上图，都是干货哦！</p>
+<h3 id="1、"><a href="#1、" class="headerlink" title="1、"></a>1、</h3><p><img src="https://s2.ax1x.com/2019/02/22/kfIg4s.jpg" alt="kfIg4s.jpg"></p>
+<h3 id="2、"><a href="#2、" class="headerlink" title="2、"></a>2、</h3><p><img src="https://s2.ax1x.com/2019/02/22/kfIcNj.png" alt="kfIcNj.png"></p>
+]]></content>
+      <categories>
+        <category>网络安全</category>
+      </categories>
+      <tags>
+        <tag>Penetration test</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>渗透测试-xml安全汇总</title>
+    <url>/2019/02/23/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95-xml%E5%AE%89%E5%85%A8%E6%B1%87%E6%80%BB/</url>
+    <content><![CDATA[<h2 id="以下思维图是专门针对xml安全的，图中详细介绍了什么是xml-以及存在什么样的漏洞和危害等及如何利用。："><a href="#以下思维图是专门针对xml安全的，图中详细介绍了什么是xml-以及存在什么样的漏洞和危害等及如何利用。：" class="headerlink" title="以下思维图是专门针对xml安全的，图中详细介绍了什么是xml,以及存在什么样的漏洞和危害等及如何利用。：)"></a>以下思维图是专门针对xml安全的，图中详细介绍了什么是xml,以及存在什么样的漏洞和危害等及如何利用。：)</h2><a id="more"></a> 
+<p><del>图中的内容可能会有点老，不过对入门xxe漏洞还是有帮助的。</del><br><img src="https://s2.ax1x.com/2019/02/22/kfI6EQ.png" alt="kfI6EQ.png"></p>
+]]></content>
+      <categories>
+        <category>网络安全</category>
+      </categories>
+      <tags>
+        <tag>Penetration test</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>渗透测试-Web安全脑图</title>
+    <url>/2019/02/23/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95-Web%E5%AE%89%E5%85%A8%E8%84%91%E5%9B%BE/</url>
+    <content><![CDATA[<h2 id="以下是我收集的Web安全方面的思维导图，帮助对网站进行全面的测试。"><a href="#以下是我收集的Web安全方面的思维导图，帮助对网站进行全面的测试。" class="headerlink" title="以下是我收集的Web安全方面的思维导图，帮助对网站进行全面的测试。"></a>以下是我收集的Web安全方面的思维导图，帮助对网站进行全面的测试。</h2><a id="more"></a> 
+<h3 id="图1："><a href="#图1：" class="headerlink" title="图1："></a>图1：</h3><p><img src="https://s2.ax1x.com/2019/02/22/kf5Qeg.png" alt="kf5Qeg.png"></p>
+<h3 id="图2："><a href="#图2：" class="headerlink" title="图2："></a>图2：</h3><p><img src="https://s2.ax1x.com/2019/02/22/kf526K.jpg" alt="kf526K.jpg"></p>
+<h3 id="图3："><a href="#图3：" class="headerlink" title="图3："></a>图3：</h3><p><img src="https://s2.ax1x.com/2019/02/22/kfIa9I.jpg" alt="kfIa9I.jpg"></p>
+<h3 id="图4-Web指纹分析方法-："><a href="#图4-Web指纹分析方法-：" class="headerlink" title="图4(Web指纹分析方法)："></a>图4(Web指纹分析方法)：</h3><p><img src="https://s2.ax1x.com/2019/02/22/kfIsHg.png" alt="kfIsHg.png"></p>
+<h3 id="图5-域名收集途径"><a href="#图5-域名收集途径" class="headerlink" title="图5(域名收集途径)"></a>图5(域名收集途径)</h3><p><img src="https://s2.ax1x.com/2019/02/22/kfoExP.png" alt="kfoExP.png"></p>
+<h3 id="图6-社会工程学"><a href="#图6-社会工程学" class="headerlink" title="图6(社会工程学)"></a>图6(社会工程学)</h3><p><del>有时会有意想不到的效果哦</del><br><img src="https://s2.ax1x.com/2019/02/22/kfIb59.jpg" alt="kfIb59.jpg"></p>
+<h3 id="图7-进阶渗透"><a href="#图7-进阶渗透" class="headerlink" title="图7(进阶渗透)"></a>图7(进阶渗透)</h3><p><img src="https://s2.ax1x.com/2019/02/22/kfI7E4.png" alt="kfI7E4.png"></p>
+<h3 id="图8-详细版"><a href="#图8-详细版" class="headerlink" title="图8(详细版)"></a>图8(详细版)</h3><p><img src="https://s2.ax1x.com/2019/02/22/kfIxKK.png" alt="kfIxKK.png"></p>
+]]></content>
+      <categories>
+        <category>网络安全</category>
+      </categories>
+      <tags>
+        <tag>Penetration test</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>机器学习入门(python基础-2)</title>
+    <url>/2019/02/09/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8-python%E5%9F%BA%E7%A1%80-2/</url>
+    <content><![CDATA[<h2 id="1-Python条件语句"><a href="#1-Python条件语句" class="headerlink" title="1.Python条件语句"></a>1.Python条件语句</h2><p>Python条件语句是通过一条或多条语句的执行结果（True或者False）来决定执行的代码块。<br>Python程序语言指定任何非0和非空（null）值为true，0 或者 null为false。<br><a id="more"></a><br>Python 编程中 if 语句用于控制程序的执行，基本形式为：<br>        if 判断条件：<br>            执行语句……<br>        else：<br>            执行语句……<br>其中”判断条件”成立时（非零），则执行后面的执行内容可以多行，以缩进来区分表示同一范围。else 为可选语句，当需要在条件不成立时执行内容则可以执行相关语句，如下图：<br><img src="https://s2.ax1x.com/2019/02/09/kN52p8.png" alt="kN52p8.png"><br>if 语句的判断条件可以用&gt;（大于）、&lt;(小于)、==（等于）、&gt;=（大于等于）、&lt;=（小于等于）来表示其关系。<br>当判断条件为多个值时，可以使用以下形式：<br>        if 判断条件1:<br>            执行语句1……<br>        elif 判断条件2:<br>            执行语句2……<br>        elif 判断条件3:<br>            执行语句3……<br>        else:<br>            执行语句4……</p>
+<h2 id="2-Python循环语句"><a href="#2-Python循环语句" class="headerlink" title="2.Python循环语句"></a>2.Python循环语句</h2><p>Python提供了for循环和while循环<del>（在Python中没有do..while循环）</del>:</p>
+<h3 id="2-1-While循环语句"><a href="#2-1-While循环语句" class="headerlink" title="2.1 While循环语句"></a>2.1 While循环语句</h3><p>Python 编程中 while 语句用于循环执行程序，即在某条件下，循环执行某段程序，以处理需要重复处理的相同任务。其基本形式为：<br>            while 判断条件：<br>                执行语句……<br>利用动态图演示下while语句执行过程<br><img src="https://s2.ax1x.com/2019/02/09/kUnYpn.gif" alt="kUnYpn.gif"></p>
+<h3 id="2-2-For循环语句"><a href="#2-2-For循环语句" class="headerlink" title="2.2 For循环语句"></a>2.2 For循环语句</h3><p>Python for循环可以遍历任何序列的项目，如一个列表或者一个字符串。其基本格式为：<br>        for 变量 in 列表:<br>            执行语句<br>            break:跳出当前循环体<br>        else:<br>            执行语句<br>range()函数，用来遍历数字序列，它会生成数列，eg:<br><img src="https://s2.ax1x.com/2019/03/17/AeM6vF.png" alt="AeM6vF.png"><br>选择指定的区间<br><img src="https://s2.ax1x.com/2019/03/17/AeMTgO.png" alt="AeMTgO.png"></p>
+<h2 id="3-Python迭代器与生成器"><a href="#3-Python迭代器与生成器" class="headerlink" title="3.Python迭代器与生成器"></a>3.Python迭代器与生成器</h2><h3 id="3-1迭代器"><a href="#3-1迭代器" class="headerlink" title="3.1迭代器"></a>3.1迭代器</h3><p>迭代器是一个可以记住遍历的位置的对象，从集合的第一个元素开始访问，直到所有的元素被访问完结束。迭代器只能往前不会后退。它有两个基本的方法：iter()和next()。<br><img src="https://s2.ax1x.com/2019/03/17/Aea4IS.png" alt="Aea4IS.png"><br>创建一个迭代器<br><img src="https://s2.ax1x.com/2019/03/17/AewynI.png" alt="AewynI.png"></p>
+<h3 id="3-2-生成器"><a href="#3-2-生成器" class="headerlink" title="3.2 生成器"></a>3.2 生成器</h3><p>使用了yield()的函数被称为生成器(generator),它是一个返回迭代器的函数，只能用于迭代操作。eg:<br><img src="https://s2.ax1x.com/2019/03/20/AK36SA.png" alt="AK36SA.png"></p>
+<h2 id="4-Python函数"><a href="#4-Python函数" class="headerlink" title="4.Python函数"></a>4.Python函数</h2><p>Python 定义函数使用 def 关键字，一般格式如下：<br>        def 函数名(参数列表):<br>            函数体<br>使用方法和其他语言函数类似，在此不一一介绍了。</p>
+<h3 id="4-1不定长参数"><a href="#4-1不定长参数" class="headerlink" title="4.1不定长参数"></a>4.1不定长参数</h3><pre><code>def functionname([formal_args,]*var_args_tuple):
+    “函数_文档字符串”
+    function_suite
+    return [expression]
+</code></pre><p>加入了 <em> 的参数会以 tuple 的形式传入，存放所有未命名的变量参数,eg:<br><img src="https://s2.ax1x.com/2019/03/20/AMVV4x.png" alt="AMVV4x.png"><br>加入了 ** 参数会以 dict 的形式传入，eg:<br><img src="https://s2.ax1x.com/2019/03/20/AM8zwV.png" alt="AM8zwV.png"><br>声明函数时，参数中 </em> 可以单独出现，如果单独出现 * ,后的参数必须用关键字传入。eg:<br><img src="https://s2.ax1x.com/2019/03/20/AMUdQe.png" alt="AMUdQe.png"></p>
+<h3 id="4-2匿名函数"><a href="#4-2匿名函数" class="headerlink" title="4.2匿名函数"></a>4.2匿名函数</h3><p>python 使用 lambda 来创建匿名函数。</p>
+<ol>
+<li><ul>
+<li>lambda只是一个表达式</li>
+</ul>
+</li>
+<li><ul>
+<li>lambda的主体是一个表达式，而不是一个代码块。仅仅能在lambda表达式中封装有限的逻辑进去。</li>
+</ul>
+</li>
+<li><ul>
+<li>lambda函数拥有自己的命名空间，且不能访问自己参数列表之外或全局命名空间里的参数<pre><code>lambda [arg1,[arg2,.....argn]]:expression
+</code></pre>eg：<br><img src="https://s2.ax1x.com/2019/03/20/AQu9ZF.png" alt="AQu9ZF.png"></li>
+</ul>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Machine learning</category>
+      </categories>
+      <tags>
+        <tag>Machine learning</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>机器学习入门(python基础-1)</title>
+    <url>/2019/02/08/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8-python%E5%9F%BA%E7%A1%80/</url>
+    <content><![CDATA[<h2 id="1-Python是什么"><a href="#1-Python是什么" class="headerlink" title="1.Python是什么"></a>1.Python是什么</h2><p>​    Python是一个简单、易读、易记的编程语言，而且是开源的，可以免 费地自由使用。Python可以用类似英语的语法编写程序，编译起来也不费 力，因此我们可以很轻松地使用Python。<a id="more"></a> 特别是对首次接触编程的人士来说， Python是最合适不过的语言。<br>在科学领域，特别是在机器学习、数据科学领域，Python也被 大量使用。Python除了高性能之外，凭借着NumPy、SciPy等优秀的数 值计算、统计分析库，在数据科学领域占有不可动摇的地位。深度学习的 框架中也有很多使用Python的场景，比如Caffe、TensorFlow、Chainer、 Theano等著名的深度学习框架都提供了Python接口。因此，学习Python 对使用深度学习框架大有益处。<br>综上，Python是最适合数据科学领域的编程语言。</p>
+<h2 id="2-Python的安装"><a href="#2-Python的安装" class="headerlink" title="2.Python的安装"></a>2.Python的安装</h2><p>​    Python有Python 2.x和Python 3.x两个版本。如果我们调查一下目前 Python的使用情况，会发现除了最新的版本3.x以外，旧的版本2.x仍在被大量使用。因此，在安装Python时，需要慎重选择安装Python的哪个版 本。这是因为两个版本之间没有兼容性（严格地讲，是没有“向后兼容性”)，也就是说，会发生用Python 3.x写的代码不能被Python 2.x执行的情况。<br>Python的安装方法有很多种，你可以选择安装包、压缩包进行安装。这里推荐的是用Anaconda这个发行版，里面集成了很多库，<a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/" target="_blank" rel="noopener">点击跳转至下载</a>，安装过程在此略过，没什么好说的。</p>
+<h2 id="3-Python解释器"><a href="#3-Python解释器" class="headerlink" title="3.Python解释器"></a>3.Python解释器</h2><p>完成Python的安装后，要先确认一下Python的版本。打开终端（Windows 中的命令行窗口），输入python --version命令，该命令会输出已经安装的 Python的版本信息。如下图，（已经安装好 了python的其他版本）<br><img src="https://s2.ax1x.com/2019/02/08/kN3qtU.png" alt="kN3qtU.png"><br>如上所示，显示了Python 3.6.5（根据实际安装的版本，版本号可能不同)， 说明已正确安装了Python 3.x。接着输入python，启动Python解释器。如下图，<br><img src="https://s2.ax1x.com/2019/02/08/kN3vc9.png" alt="kN3vc9.png"><br>    Python解释器也被称为“对话模式”，用户能够以和Python对话的方式 进行编程。<br>    利用解释器，你可以完成算术计算。如下图<br><img src="https://s2.ax1x.com/2019/02/08/kN3smt.png" alt="kN3smt.png"><br>*表示乘法，/表示除法，<strong>表示乘方（3</strong>2是3的2次方）。另外，在 Python 2.x中，整数除以整数的结果是整数，比如，7÷5的结果是1。但在 Python 3.x中，整数除以整数的结果是小数（浮点数）。</p>
+<h3 id="3-1-Python数据类型"><a href="#3-1-Python数据类型" class="headerlink" title="3.1 Python数据类型"></a>3.1 Python数据类型</h3><pre><code>Python作为一种高级语言，有5个标准的数据类型：Numbers(数字)、String(字符串)、List(列表)、Tuple(元组)、Dictionary(字典)，在此不一一介绍。Python提供了内置函数Type()来判断数据类型。如下图，
+</code></pre><p><img src="https://s2.ax1x.com/2019/02/08/kN8ogH.png" alt="kN8ogH.png"></p>
+<h3 id="3-2-Python变量类型"><a href="#3-2-Python变量类型" class="headerlink" title="3.2 Python变量类型"></a>3.2 Python变量类型</h3><p><strong>变量赋值</strong><br>Python 中的变量赋值不需要类型声明。<br>每个变量在内存中创建，都包括变量的标识，名称和数据这些信息。<br>每个变量在使用前都必须赋值，变量赋值以后该变量才会被创建。<br>等号（=）用来给变量赋值。<br>等号（=）运算符左边是一个变量名,等号（=）运算符右边是存储在变量中的值。<br><img src="https://s2.ax1x.com/2019/02/08/kNJCWD.png" alt="kNJCWD.png"><br><strong>多个变量赋值</strong><br>Python允许你同时为多个变量赋值，例如：<br><img src="https://s2.ax1x.com/2019/02/08/kNJ2tK.png" alt="kNJ2tK.png"><br>您也可以为多个对象指定多个变量，例如：<br><img src="https://s2.ax1x.com/2019/02/08/kNJ46H.png" alt="kNJ46H.png"></p>
+<h4 id="Python数字"><a href="#Python数字" class="headerlink" title="Python数字"></a>Python数字</h4><p>数字数据类型用于存储数值。<br>他们是不可改变的数据类型，这意味着改变数字数据类型会分配一个新的对象。<br>当你指定一个值时，Number对象就会被创建：<br>        var1 = 1<br>        var2 = 10<br>您也可以使用del语句删除一些对象的引用。<br>del语句的语法是：<br>        del var1[,var2[,var3[….,varN]]]]<br>您可以通过使用del语句删除单个或多个对象的引用。例如：<br>        del var<br>        del var_a, var_b<br>Python支持四种不同的数字类型：</p>
+<ul>
+<li>int（有符号整型）</li>
+<li>long（长整型[也可以代表八进制和十六进制]<del>long 类型只存在于 Python2.X 版本中</del></li>
+<li>float（浮点型）</li>
+<li>complex（复数）<h4 id="Python字符串"><a href="#Python字符串" class="headerlink" title="Python字符串"></a>Python字符串</h4>字符串或串(String)是由数字、字母、下划线组成的一串字符。一般记为 :<pre><code>s=&quot;a1a2···an&quot;(n&gt;=0)
+</code></pre>python的字串列表有2种取值顺序:<ul>
+<li>从左到右索引默认0开始的，最大范围是字符串长度减1</li>
+<li>从右到左索引默认-1开始的，最大范围是字符串开头<br>如果你要实现从字符串中获取一段子字符串的话，可以使用 [头下标:尾下标] 来截取相应的字符串，其中下标是从 0 开始算起，可以是正数或负数，下标可以为空表示取到头或尾。<br>[头下标:尾下标] 获取的子字符串包含头下标的字符，但不包含尾下标的字符。如下图，<br><img src="https://s2.ax1x.com/2019/02/08/kNYtud.png" alt="kNYtud.png"><h4 id="Python列表"><a href="#Python列表" class="headerlink" title="Python列表"></a>Python列表</h4>List（列表） 是 Python 中使用最频繁的数据类型。<br>列表可以完成大多数集合类的数据结构实现。它支持字符，数字，字符串甚至可以包含列表（即嵌套）。<br>列表用 [ ] 标识，是 python 最通用的复合数据类型。<br>列表中值的切割也可以用到变量 [头下标:尾下标] ，就可以截取相应的列表，从左到右索引默认 0 开始，从右到左索引默认 -1 开始，下标可以为空表示取到头或尾。如下图，<br><img src="https://s2.ax1x.com/2019/02/08/kNYXUx.png" alt="kNYXUx.png"><h4 id="Python元组"><a href="#Python元组" class="headerlink" title="Python元组"></a>Python元组</h4>元组是另一个数据类型，类似于 List（列表）。<br>元组用 () 标识。内部元素用逗号隔开。但是<strong>元组不能二次赋值</strong>，相当于只读列表。<br>如下图，<br><img src="https://s2.ax1x.com/2019/02/08/kNNiSU.png" alt="kNNiSU.png"><h4 id="Python字典"><a href="#Python字典" class="headerlink" title="Python字典"></a>Python字典</h4>字典(dictionary)是除列表以外python之中最灵活的内置数据结构类型。列表是有序的对象集合，字典是无序的对象集合。<br>两者之间的区别在于：字典当中的元素是通过键来存取的，而不是通过偏移存取。<br>字典用”{ }”标识。字典由索引(key)和它对应的值value组成。如下图，<br><img src="https://s2.ax1x.com/2019/02/08/kNtBZR.png" alt="kNtBZR.png"></li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Machine learning</category>
+      </categories>
+      <tags>
+        <tag>Machine learning</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>渗透测试之工具篇(1)</title>
+    <url>/2019/02/07/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%B9%8B%E5%B7%A5%E5%85%B7%E7%AF%87-1/</url>
+    <content><![CDATA[<p><strong>俗话说，不想当将军的士兵不是好厨子。</strong>一个优秀的渗透测试人员，一定会有那么几大杀器，达到事半功倍的效果。<a id="more"></a> 虽然介绍工具的使用是老生常谈的话题，不过我还是要介绍一下(增加自己的熟练度)</p>
+<p><strong>nmap</strong>堪称内网渗透神器，端口扫描神器，漏洞扫描神器。Nmap是一个网络连接端扫描软件，用来扫描网上电脑开放的网络连接端。确定哪些服务运行在哪些连接端，并且推断计算机运行哪个操作系统（这是亦称 fingerprinting）。它是网络管理员必用的软件之一，以及用以评估网络系统安全。 </p>
+<p><strong>下载</strong><br>Nmap提供了Windows版、Linux版、Mac版以及源码<br><a href="http://www.nmap.com.cn/" target="_blank" rel="noopener">点击跳转至下载</a><br>可以选择适合您的机器的版本下载，安装过程在此略过。<br><strong>使用</strong><br>用法：nmap [扫描类型] [选项] {目标规范}<br>目标规范：<br>可以传递主机名，IP地址，网络等。<br>Eg：scanme.nmap.org，microsoft.com / 24,192.168.0.1; 10.0-255.0-255.1-254<br>-iL  <inputfilename> ：从主机/网络列表输入<br>-iR <num hosts="">：选择随机目标<br>--exclude <host1 [，host2]="" [，host3]，...="">：排除hosts / networks<br>--excludefile &lt;exclude_file&gt;：从文件中排除列表<br><strong>HOST DISCOVERY：</strong><br>-sL：列表扫描 - 只列出要扫描的目标<br>-sP：Ping扫描 - 只需确定主机是否在线<br>-P0：将所有主机视为在线 - 跳过主机发现<br>-PS / PA / PU [端口列表]：给定端口的TCP SYN / ACK或UDP发现探测<br>-PE / PP / PM：ICMP回送，时间戳和网络掩码请求发现探测<br>-n / -R：永远不要进行DNS解析/始终解析[默认：有时解析]<br><strong>SCAN TECHNIQUES：</strong><br>-sS / sT / sA / sW / sM：TCP SYN / Connect（）/ ACK / Window / Maimon扫描<br>-sN / sF / sX：TCP Null，FIN和Xmas扫描<br>- -scanflags <flags>：自定义TCP扫描标志<br>-sI <zombie host="" [：probeport]="">：Idlescan<br>-sO：IP协议扫描<br>-b <ftp relay="" host="">：FTP跳出扫描<br><strong>端口规范和扫描顺序：</strong><br>-p &lt;端口范围&gt;：仅扫描指定的端口<br>Eg：-p 22; -p 1-65535;<br>-F：快速 - 仅扫描nmap-services文件中列出的端口）<br>-r：连续扫描端口 - 不随机化<br><strong>SERVICE / VERSION DETECTION：</strong><br>-sV：探测打开端口以确定服务/版本信息<br>--version-light ：限制为最可能的探测器以便更快识别<br>--version-all：尝试每个探测器进行版本检测<br>--version-trace：显示详细的版本扫描活动（用于调试）<br><strong>操作系统检测：</strong><br>-O：启用OS检测<br>--osscan-limit: Limit OS detection to promising targets<br>--osscan-guess: Guess OS more aggressively<br><strong>时间和性能：</strong><br>-T [0-6]：设置时序模板（更高更快）<br>--min-hostgroup / max-hostgroup <msec>：并行主机扫描组大小<br>--min-parallelism / max-parallelism <msec>：探测并行化<br>--min-rtt-timeout / max-rtt-timeout / initial-rtt -timeout <msec>：指定<br><strong>探测往返时间。</strong><br>--host-timeout <msec>：在此长时间后放弃目标<br>--scan-delay / - max-scan-delay <msec>：调整探测器之间的延迟<br><strong>FIREWALL / IDS EVASION AND SPOOFING :</strong><br>-f; –mtu <val>：片段包（可选择w /给定MTU）<br>-D &lt;decoy1，decoy2 [，ME]，…&gt;：用decoys<br>-S &lt;IP_Address&gt; 披露扫描：欺骗源地址<br>-e <iface>：使用指定的接口<br>-g / - source-port <portnum>：<br>--data-length <num>：将随机数据附加到已发送的数据包<br>--ttl <val>：设置IP生存时间字段<br>--spoof-mac &lt;mac地址，前缀或供应商名称&gt;：欺骗您的MAC地址<br><strong>OUTPUT：</strong><br>-oN <filespec> (标准输出)<br>-oX <filespec> (XML 输出)<br>-oS <filespec> (ScRipT KIdd|3 oUTpuT)<br>-oG <filespec> (Grep 输出)<br>-oA <basename>(输出至所有格式)<br>--resume <filename> (继续中断的扫描)<br>--stylesheet <path or="" url=""> (设置 XSL 样式表，转换 XML 输出)<br>--no_stylesheet (忽略 XML 声明的 XSL 样式表)<br>-v：增加详细级别（使用两次以获得更多效果）<br>-d [level]：设置或增加调试级别（最多9个是有意义的）<br>packet-trace ：显示发送和接收的所有数据包<br>--iflist：打印主机接口和路由（用于调试）<br>--append-output：追加而不是clobber指定的输出文件<br>--resume <filename>：恢复中止扫描<br>--stylesheet &lt;path / URL&gt;：XSL样式表将XML输出转换为HTML<br>--no-stylesheet：Prevent Nmap关联XSL样式表与XML输出<br><strong>MISC：</strong><br>-6：启用IPv6扫描<br>-A：启用OS检测和版本检测<br>--datadir <dirname>：指定自定义Nmap数据文件位置<br>--send-eth / - send-ip：使用原始以太网帧或IP数据包发送数据包<br>--privileged：假设用户具有完全权限<br>-V：打印版本号<br>-h：打印此帮助摘要页面。<br><strong>例子：</strong><br>nmap -v -A scanme.nmap.org<br>nmap -v -sP 192.168.0.0/16 10.0.0.0/8<br>nmap -v -iR 10000 -P0 -p 80<br><strong>更多详细信息请点击</strong><br><a href="http://www.nmap.com.cn/doc/manual.shtm" target="_blank" rel="noopener">nmap中文手册</a></dirname></filename></path></filename></basename></filespec></filespec></filespec></filespec></val></num></portnum></iface></val></msec></msec></msec></msec></msec></ftp></zombie></flags></host1></num></inputfilename></p>
+]]></content>
+      <categories>
+        <category>网络安全</category>
+      </categories>
+      <tags>
+        <tag>Penetration test</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>安卓开发-环境配置(解决Gradle包报错问题)</title>
+    <url>/2019/02/07/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<p>上一篇已经给出了安卓开发的学习路线。俗话说的好，工欲善其事必先利其器，所以我们开始着手准备开发工具。<a id="more"></a> 至于开发工具，新手我推荐Android Studio，他是Google为他的”亲儿子”Android开发的一款IDE，集成了安卓SDK，不用自己去配置环境，下载安装包(选择适合你的机器类型的稳定版本3.0、2.2)，剩下的步骤就是傻瓜式的一键安装了，没有什么好介绍的。一路next，直到出现这个图</p>
+<p><img src="https://s2.ax1x.com/2019/02/07/ktBdPI.png" alt="ktBdPI.png"><br>如图中所示，选择设置代理，<br><img src="https://s2.ax1x.com/2019/02/07/ktBrM8.png" alt="ktBrM8.png"><br>之后点击ok，接着点击Next,剩下的就是IDE的个性化配置了，eg：IDE的主题、字体的大小等等，根据个人喜好。如果不那么设置代理，你将会遇到Gradle包下载失败的问题，这个错误将会导致Building项目失败，整个项目无法运行等问题(<del>虽然博客上有很多人说直接下载对应版本的Gradle，然后解压到相应目录，不过我感觉那种治标不治本，不如设置代理直接下好了</del>)。切记，<strong>配置代理这很重要</strong>(又或者自行搭梯子)。等待1min左右，包就下载了，就可以<del>愉快的</del>进行你的第一个安卓项目了–Hello World！<br>Have a Good Day!</p>
+]]></content>
+      <categories>
+        <category>Android开发</category>
+      </categories>
+      <tags>
+        <tag>Android</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>机器学习</title>
+    <url>/2019/02/06/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<p>Brief Introduction：最近这几年IT界什么最火，机器学习啊。笔者算是也在学习机器学习吧，无奈实在有点难度，数学知识跟不上，学了好久丝毫没有进展。<a id="more"></a> 当初是抱着构建属于自己的神经网络去的，这个板块我将会记录我在机器学习的路上的一些收获。<strong>路漫漫其修远兮，吾将上下而求索。</strong></p>
+]]></content>
+      <categories>
+        <category>Machine learning</category>
+      </categories>
+      <tags>
+        <tag>Machine learning</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>安卓开发-学习框架</title>
+    <url>/2019/02/06/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91-%E5%AD%A6%E4%B9%A0%E6%A1%86%E6%9E%B6/</url>
+    <content><![CDATA[<p>这算是我入门安卓开发的唯一的资料了。</p>
+<a id="more"></a> 
+<h4 id="安卓开发路线"><a href="#安卓开发路线" class="headerlink" title="安卓开发路线"></a>安卓开发路线</h4><p><img src="https://s2.ax1x.com/2019/02/06/kYyxIJ.png" alt="kYyxIJ.png"></p>
+]]></content>
+      <categories>
+        <category>Android开发</category>
+      </categories>
+      <tags>
+        <tag>Android</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>安卓开发</title>
+    <url>/2019/02/06/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91/</url>
+    <content><![CDATA[<p>Brief Introduction：学习安卓开发也是我偶然间的想法，因为GN的软件大多数需要“充钱”。<br><del>充钱是不可能的，这辈子也不会充钱的，只有想办法破解才能维持得了生活这个样子。</del><a id="more"></a><br>但是软件开发出来你那么好破解吗？答案是：怎么可能轻易被你破解了呢。所以我就翻遍了资料了，找到了吾爱破解，有教程但是看不懂，原因是看不懂app源码啊。苦恼.jpg。难道就那么放弃了吗，答案是：肯定不能哇。所以走上了<del>安卓开发的不归路</del>，也不算多么新的东西吧，不过坑是真的多啊。也许是因为没有老师指导吧，什么坑都遇到过了。最重要的是Android是谷歌的亲儿子，GN不怎么友好，这个就是很大的屏障，开发环境用的包都没法下载，更别谈开发了。后续我会陆续介绍我遇到的坑已经解决办法。还在学习ing，欢迎各位大佬前来指导。</p>
+]]></content>
+      <categories>
+        <category>Android开发</category>
+      </categories>
+      <tags>
+        <tag>Android</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>黑苹果(从入门到放弃)</title>
+    <url>/2019/02/06/Hackintosh/</url>
+    <content><![CDATA[<p>Brief Introduction：有段时间我曾经特别迷恋黑苹果，因为她”太好吃了“，所以我便触及了那“禁果”。<a id="more"></a> 我这辈子打死也不会再碰黑苹果了(emmmm黑苹果真香)，接触黑苹果对于我来说就像来到了一个新的世界，所有的东西都是那么陌生而又有吸引力。我需要从底层了解黑苹果，了解内核的破解，以及核显和独显，网卡的型号，还有一大堆的新名词，eg:EFI文件夹，DSDT，注入驱动，CLOVER等等吧。为此我花费了将近半年的时间了解这些（翻阅国外大佬们的博客，国内的黑苹果乐园，远景论坛，加QQ群，TG群），这中间我也有帮别人解决安装黑苹果遇到的问题，也算是入门了吧。所以这个板块我将会介绍黑苹果的安装，已经各种型号的clover文件夹（台式机最简单，笔记本是真的折腾）<strong>该模块会持续更新。。。</strong>喜欢“啃黑苹果”的小伙伴可以一起交流哦~</p>
+]]></content>
+      <categories>
+        <category>Hackintosh</category>
+      </categories>
+      <tags>
+        <tag>Hackintosh</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>渗透测试-思维脑图</title>
+    <url>/2019/02/06/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95-%E6%80%9D%E7%BB%B4%E8%84%91%E5%9B%BE/</url>
+    <content><![CDATA[<h2 id="以下是我平时使用的思维导图，可以帮助测试者更系统的进行测试"><a href="#以下是我平时使用的思维导图，可以帮助测试者更系统的进行测试" class="headerlink" title="以下是我平时使用的思维导图，可以帮助测试者更系统的进行测试"></a>以下是我平时使用的思维导图，可以帮助测试者更系统的进行测试</h2><a id="more"></a> 
+<ol>
+<li>web安全测试<br><img src="https://s2.ax1x.com/2019/02/06/kYIEcQ.png" alt="kYIEcQ.png"></li>
+<li>业务安全测试<br><img src="https://s2.ax1x.com/2019/02/06/kYIVXj.png" alt="kYIVXj.png"></li>
+<li>常见漏洞挖掘<br><img src="https://s2.ax1x.com/2019/02/06/kYIens.png" alt="kYIens.png"><br>下面附上最全的渗透测试脑图<br><a href="https://www.ms08067.com/map.html" target="_blank" rel="noopener">点击跳转至最全测试脑图</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>网络安全</category>
+      </categories>
+      <tags>
+        <tag>Penetration test</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Web开发</title>
+    <url>/2019/02/06/Web%E5%BC%80%E5%8F%91/</url>
+    <content><![CDATA[<p>Brief Introduction：这个板块将会记录我在Web开发(Java Web)的路上遇到的问题，以及各种常见的Web框架，eg:SSM、SSH、Django，Flask<strong>该模块会持续更新。。。</strong>喜欢Web开发的小伙伴可以一起交流。</p>
+]]></content>
+      <categories>
+        <category>Web开发</category>
+      </categories>
+      <tags>
+        <tag>Web</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>渗透测试</title>
+    <url>/2019/02/06/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<p>Brief Introduction：在这个版块我将会介绍常见的渗透工具，渗透测试思路，以及国内外知名的网络安全网站，个人博客，最新的技术。<strong>该板块会持续更新。。。</strong>欢迎喜欢这方面的朋友一起交流。</p>
+<a id="more"></a> 
+]]></content>
+      <categories>
+        <category>网络安全</category>
+      </categories>
+      <tags>
+        <tag>Penetration test</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>爬虫</title>
+    <url>/2019/02/06/%E7%88%AC%E8%99%AB/</url>
+    <content><![CDATA[<p>Brief Introduction：这个模块我将会记录我在开发sider的路上踩到的坑，以及入门爬虫需要的知识和一些好的spider框架，<strong>该模块会持续更新。。。</strong>喜欢开发spider的小伙伴可以一起交流。</p>
+]]></content>
+      <categories>
+        <category>爬虫开发</category>
+      </categories>
+      <tags>
+        <tag>spider</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>新年快乐！！！&amp;&amp;年终总结！！！</title>
+    <url>/2019/02/04/%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90/</url>
+    <content><![CDATA[<p>emmmm，时隔一年，我的个人博客又再次更新了。上次弄完博客之后，因为一些事情没有及时更新博客，后来电脑重装了系统，啥都没有了。也忘记了搞博客这事了。(手动滑稽)这次重新弄blog，多亏了Miko大佬的帮助，让我少踩了不少坑。<a id="more"></a> </p>
+<p>回望过去的一年，既有收获也有遗憾，既有感动也有泪水。生活就是这样–痛并快乐着，你无法改变已经存在的事实，只有尽力做好自己，不忘初心，方得始终。记得《阿甘正传》里，福尔斯.甘的母亲给他说的一句话“life was like a box o’chocolates. You never know what you gonna get.”所以我们只有不断的充实自己，才能迎接生活的挑战。</p>
+<p>回归正题，今天是除夕，除旧迎新的日子。在这里祝各位大佬新的一年技术更上一层楼。新年快乐，万事如意，也祝我新的一年学习进步，争取早日成为小菜鸟。哈哈哈哈哈。新年快乐哦~</p>
+]]></content>
+      <categories>
+        <category>生活|闲谈</category>
+      </categories>
+      <tags>
+        <tag>life</tag>
+      </tags>
+  </entry>
+</search>
