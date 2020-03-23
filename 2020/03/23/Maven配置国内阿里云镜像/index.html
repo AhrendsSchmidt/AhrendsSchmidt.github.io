@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    渗透测试-Web安全脑图 |  F02c|d&#39;s blog
+    Maven配置国内阿里云镜像 |  F02c|d&#39;s blog
   </title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   
@@ -30,14 +30,14 @@
   <div id="app">
     <main class="content">
       <section class="outer">
-  <article id="post-渗透测试-Web安全脑图" class="article article-type-post" itemscope="" itemprop="blogPost" data-scroll-reveal="">
+  <article id="post-Maven配置国内阿里云镜像" class="article article-type-post" itemscope="" itemprop="blogPost" data-scroll-reveal="">
 
   <div class="article-inner">
     
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  渗透测试-Web安全脑图
+  Maven配置国内阿里云镜像
 </h1>
   
 
@@ -46,12 +46,12 @@
 
     
     <div class="article-meta">
-      <a href="/2019/02/23/渗透测试-Web安全脑图/" class="article-date">
-  <time datetime="2019-02-22T16:17:22.000Z" itemprop="datePublished">2019/02/23 00:17</time>
+      <a href="/2020/03/23/Maven配置国内阿里云镜像/" class="article-date">
+  <time datetime="2020-03-23T01:14:20.000Z" itemprop="datePublished">2020/03/23 09:14</time>
 </a>
       
   <div class="article-category">
-    <a class="article-category-link" href="/categories/网络安全/">网络安全</a>
+    <a class="article-category-link" href="/categories/Web后端开发/">Web后端开发</a>
   </div>
 
       
@@ -61,7 +61,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">82字</span>
+            <span class="post-count">259字</span>
         </span>
     </span>
 
@@ -81,8 +81,6 @@
 
     
     
-    <div class="tocbot"></div>
-
 
 
 
@@ -97,15 +95,22 @@
       
 
       
-      <h2 id="以下是我收集的Web安全方面的思维导图，帮助对网站进行全面的测试。"><a href="#以下是我收集的Web安全方面的思维导图，帮助对网站进行全面的测试。" class="headerlink" title="以下是我收集的Web安全方面的思维导图，帮助对网站进行全面的测试。"></a>以下是我收集的Web安全方面的思维导图，帮助对网站进行全面的测试。</h2><a id="more"></a> 
-<h3 id="图1："><a href="#图1：" class="headerlink" title="图1："></a>图1：</h3><p><img src="https://s2.ax1x.com/2019/02/22/kf5Qeg.png" alt="kf5Qeg.png"></p>
-<h3 id="图2："><a href="#图2：" class="headerlink" title="图2："></a>图2：</h3><p><img src="https://s2.ax1x.com/2019/02/22/kf526K.jpg" alt="kf526K.jpg"></p>
-<h3 id="图3："><a href="#图3：" class="headerlink" title="图3："></a>图3：</h3><p><img src="https://s2.ax1x.com/2019/02/22/kfIa9I.jpg" alt="kfIa9I.jpg"></p>
-<h3 id="图4-Web指纹分析方法-："><a href="#图4-Web指纹分析方法-：" class="headerlink" title="图4(Web指纹分析方法)："></a>图4(Web指纹分析方法)：</h3><p><img src="https://s2.ax1x.com/2019/02/22/kfIsHg.png" alt="kfIsHg.png"></p>
-<h3 id="图5-域名收集途径"><a href="#图5-域名收集途径" class="headerlink" title="图5(域名收集途径)"></a>图5(域名收集途径)</h3><p><img src="https://s2.ax1x.com/2019/02/22/kfoExP.png" alt="kfoExP.png"></p>
-<h3 id="图6-社会工程学"><a href="#图6-社会工程学" class="headerlink" title="图6(社会工程学)"></a>图6(社会工程学)</h3><p><del>有时会有意想不到的效果哦</del><br><img src="https://s2.ax1x.com/2019/02/22/kfIb59.jpg" alt="kfIb59.jpg"></p>
-<h3 id="图7-进阶渗透"><a href="#图7-进阶渗透" class="headerlink" title="图7(进阶渗透)"></a>图7(进阶渗透)</h3><p><img src="https://s2.ax1x.com/2019/02/22/kfI7E4.png" alt="kfI7E4.png"></p>
-<h3 id="图8-详细版"><a href="#图8-详细版" class="headerlink" title="图8(详细版)"></a>图8(详细版)</h3><p><img src="https://s2.ax1x.com/2019/02/22/kfIxKK.png" alt="kfIxKK.png"></p>
+      <p>这是一篇关于Maven配置的介绍<a id="more"></a></p>
+<p>Maven是什么？Maven 是一个项目管理工具，可以对 Java 项目进行构建、依赖管理。也就是说有了Maven管理你的项目，你不必要再去费力的寻找各种依赖Jar包，你只需要在pom文件中声明你要用到的依赖，Maven会自动帮你解决这些依赖。可以节省你很多的时间。</p>
+<p>Maven国外的网站下载速度特别慢，原因你懂的。可以使用阿里云的Maven镜像。</p>
+<ol>
+<li><p>先去apache-maven的官网下载maven到本地。</p>
+</li>
+<li><p>其次修改本地maven目录下的conf\setting.xml。</p>
+</li>
+<li><p>找到大约146行左右，会有<code>&lt;mirror&gt;xxxxx&lt;mirror/&gt;</code></p>
+</li>
+<li><p>将下面的代码复制进去就好了。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mirrors</span>&gt;</span> </span><br><span class="line">	<span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span>alimaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun maven<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>这样你就可以使用本地Maven了。</p>
+<p><strong>have a good time~</strong></p>
+</li>
+</ol>
 
       
       <!-- reward -->
@@ -174,14 +179,14 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2019/02/23/渗透测试-Web安全脑图/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2020/03/23/Maven配置国内阿里云镜像/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Penetration-test/">Penetration test</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Web/">Web</a></li></ul>
 
 
     </footer>
@@ -192,19 +197,19 @@
   
   <nav class="article-nav">
     
-      <a href="/2019/02/23/渗透测试-xml安全汇总/" class="article-nav-link">
+      <a href="/2020/03/23/node配置国内镜像源/" class="article-nav-link">
         <strong class="article-nav-caption">上一篇</strong>
         <div class="article-nav-title">
           
-            渗透测试-xml安全汇总
+            npm配置国内镜像源
           
         </div>
       </a>
     
     
-      <a href="/2019/02/09/机器学习入门-python基础-2/" class="article-nav-link">
+      <a href="/2020/03/21/github博客失联肿么办/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">机器学习入门(python基础-2)</div>
+        <div class="article-nav-title">github博客失联肿么办~</div>
       </a>
     
   </nav>

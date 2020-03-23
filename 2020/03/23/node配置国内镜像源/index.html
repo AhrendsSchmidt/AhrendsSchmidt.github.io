@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    渗透测试-Web安全脑图 |  F02c|d&#39;s blog
+    npm配置国内镜像源 |  F02c|d&#39;s blog
   </title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   
@@ -30,14 +30,14 @@
   <div id="app">
     <main class="content">
       <section class="outer">
-  <article id="post-渗透测试-Web安全脑图" class="article article-type-post" itemscope="" itemprop="blogPost" data-scroll-reveal="">
+  <article id="post-node配置国内镜像源" class="article article-type-post" itemscope="" itemprop="blogPost" data-scroll-reveal="">
 
   <div class="article-inner">
     
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  渗透测试-Web安全脑图
+  npm配置国内镜像源
 </h1>
   
 
@@ -46,12 +46,12 @@
 
     
     <div class="article-meta">
-      <a href="/2019/02/23/渗透测试-Web安全脑图/" class="article-date">
-  <time datetime="2019-02-22T16:17:22.000Z" itemprop="datePublished">2019/02/23 00:17</time>
+      <a href="/2020/03/23/node配置国内镜像源/" class="article-date">
+  <time datetime="2020-03-23T01:54:15.000Z" itemprop="datePublished">2020/03/23 09:54</time>
 </a>
       
   <div class="article-category">
-    <a class="article-category-link" href="/categories/网络安全/">网络安全</a>
+    <a class="article-category-link" href="/categories/Web前端开发/">Web前端开发</a>
   </div>
 
       
@@ -61,7 +61,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">82字</span>
+            <span class="post-count">246字</span>
         </span>
     </span>
 
@@ -81,8 +81,6 @@
 
     
     
-    <div class="tocbot"></div>
-
 
 
 
@@ -97,15 +95,17 @@
       
 
       
-      <h2 id="以下是我收集的Web安全方面的思维导图，帮助对网站进行全面的测试。"><a href="#以下是我收集的Web安全方面的思维导图，帮助对网站进行全面的测试。" class="headerlink" title="以下是我收集的Web安全方面的思维导图，帮助对网站进行全面的测试。"></a>以下是我收集的Web安全方面的思维导图，帮助对网站进行全面的测试。</h2><a id="more"></a> 
-<h3 id="图1："><a href="#图1：" class="headerlink" title="图1："></a>图1：</h3><p><img src="https://s2.ax1x.com/2019/02/22/kf5Qeg.png" alt="kf5Qeg.png"></p>
-<h3 id="图2："><a href="#图2：" class="headerlink" title="图2："></a>图2：</h3><p><img src="https://s2.ax1x.com/2019/02/22/kf526K.jpg" alt="kf526K.jpg"></p>
-<h3 id="图3："><a href="#图3：" class="headerlink" title="图3："></a>图3：</h3><p><img src="https://s2.ax1x.com/2019/02/22/kfIa9I.jpg" alt="kfIa9I.jpg"></p>
-<h3 id="图4-Web指纹分析方法-："><a href="#图4-Web指纹分析方法-：" class="headerlink" title="图4(Web指纹分析方法)："></a>图4(Web指纹分析方法)：</h3><p><img src="https://s2.ax1x.com/2019/02/22/kfIsHg.png" alt="kfIsHg.png"></p>
-<h3 id="图5-域名收集途径"><a href="#图5-域名收集途径" class="headerlink" title="图5(域名收集途径)"></a>图5(域名收集途径)</h3><p><img src="https://s2.ax1x.com/2019/02/22/kfoExP.png" alt="kfoExP.png"></p>
-<h3 id="图6-社会工程学"><a href="#图6-社会工程学" class="headerlink" title="图6(社会工程学)"></a>图6(社会工程学)</h3><p><del>有时会有意想不到的效果哦</del><br><img src="https://s2.ax1x.com/2019/02/22/kfIb59.jpg" alt="kfIb59.jpg"></p>
-<h3 id="图7-进阶渗透"><a href="#图7-进阶渗透" class="headerlink" title="图7(进阶渗透)"></a>图7(进阶渗透)</h3><p><img src="https://s2.ax1x.com/2019/02/22/kfI7E4.png" alt="kfI7E4.png"></p>
-<h3 id="图8-详细版"><a href="#图8-详细版" class="headerlink" title="图8(详细版)"></a>图8(详细版)</h3><p><img src="https://s2.ax1x.com/2019/02/22/kfIxKK.png" alt="kfIxKK.png"></p>
+      <p>这是一篇关于npm配置的文章<a id="more"></a></p>
+<p>要了解什么是npm，首先知道什么是node.js。Node.js 是一个基于Chrome JavaScript 运行时建立的一个平台。Node.js是一个事件驱动I/O服务端JavaScript环境，基于Google的V8引擎，V8引擎执行Javascript的速度非常快，性能非常好。</p>
+<p>那么npm 就是JavaScript 世界的包管理工具，并且是Node.js 平台的默认包管理工具。有了这个工具， 你可以安装、共享、分发代码，管理项目依赖关系。这个工具的官网也在国外，所以你需要配置一下国内镜像才可以更好的使用。</p>
+<ol>
+<li>从<a href="http://nodejs.cn/" target="_blank" rel="noopener">node官网</a>下载安装node，npm就会自动安装到你的设备中。</li>
+<li>配置npm <code>npm --registry=https://registry.npm.taobao.org</code></li>
+<li>这样就可以使用npm的淘宝镜像了。</li>
+<li>或者使用cnpm代替npm <code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code></li>
+<li>安装模块 npm install [name] / cnpm install [name]</li>
+</ol>
+<p><strong>have a good time~</strong></p>
 
       
       <!-- reward -->
@@ -174,14 +174,14 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2019/02/23/渗透测试-Web安全脑图/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2020/03/23/node配置国内镜像源/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Penetration-test/">Penetration test</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Web/">Web</a></li></ul>
 
 
     </footer>
@@ -192,19 +192,10 @@
   
   <nav class="article-nav">
     
-      <a href="/2019/02/23/渗透测试-xml安全汇总/" class="article-nav-link">
-        <strong class="article-nav-caption">上一篇</strong>
-        <div class="article-nav-title">
-          
-            渗透测试-xml安全汇总
-          
-        </div>
-      </a>
     
-    
-      <a href="/2019/02/09/机器学习入门-python基础-2/" class="article-nav-link">
+      <a href="/2020/03/23/Maven配置国内阿里云镜像/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">机器学习入门(python基础-2)</div>
+        <div class="article-nav-title">Maven配置国内阿里云镜像</div>
       </a>
     
   </nav>
