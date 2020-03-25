@@ -2,18 +2,6 @@
 <search>
   <entry>
     <title>navicat连接远程数据库</title>
-    <url>/2020/03/25/navicate%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
-    <content><![CDATA[<p>这是一篇关于navicat</p>
-]]></content>
-      <categories>
-        <category>Web后端开发</category>
-      </categories>
-      <tags>
-        <tag>Web</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>navicat连接远程数据库</title>
     <url>/2020/03/25/navicat%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
     <content><![CDATA[<p>这是一篇关于navicat连接远程数据库的教程<a id="more"></a></p>
 <p>在日常的后端开发中，和数据库交互是必不可少的一部分。因此需要一款比较好的数据库可视化工具来帮助我们快速开发。<a href="https://www.navicat.com.cn/" target="_blank" rel="noopener">navicat</a>就是这么一款神器。今天我将要介绍如何远程远程的MySql数据库。</p>
