@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    navicat连接远程数据库 |  F02c|d&#39;s blog
+    CentOS7配置静态IP |  F02c|d&#39;s blog
   </title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   
@@ -30,14 +30,14 @@
   <div id="app">
     <main class="content">
       <section class="outer">
-  <article id="post-navicat连接远程数据库" class="article article-type-post" itemscope="" itemprop="blogPost" data-scroll-reveal="">
+  <article id="post-CentOS7配置静态IP" class="article article-type-post" itemscope="" itemprop="blogPost" data-scroll-reveal="">
 
   <div class="article-inner">
     
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  navicat连接远程数据库
+  CentOS7配置静态IP
 </h1>
   
 
@@ -46,12 +46,12 @@
 
     
     <div class="article-meta">
-      <a href="/2020/03/25/navicat连接远程数据库/" class="article-date">
-  <time datetime="2020-03-25T11:02:53.000Z" itemprop="datePublished">2020/03/25 19:02</time>
+      <a href="/2020/03/26/CentOS7配置静态IP/" class="article-date">
+  <time datetime="2020-03-26T15:44:29.000Z" itemprop="datePublished">2020/03/26 23:44</time>
 </a>
       
   <div class="article-category">
-    <a class="article-category-link" href="/categories/Web后端开发/">Web后端开发</a>
+    <a class="article-category-link" href="/categories/centOS7-setting/">centOS7 setting</a>
   </div>
 
       
@@ -61,7 +61,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">289字</span>
+            <span class="post-count">236字</span>
         </span>
     </span>
 
@@ -95,25 +95,17 @@
       
 
       
-      <p>这是一篇关于navicat连接远程数据库的教程<a id="more"></a></p>
-<p>在日常的后端开发中，和数据库交互是必不可少的一部分。因此需要一款比较好的数据库可视化工具来帮助我们快速开发。<a href="https://www.navicat.com.cn/" target="_blank" rel="noopener">navicat</a>就是这么一款神器。今天我将要介绍如何连接远程的MySql数据库。</p>
+      <p>这是一篇关于centOS7配置静态IP的文章<a id="more"></a></p>
 <ol>
-<li><p>打开远端服务器，并且进入mysql的命令行界面。</p>
+<li><p>修改对应网卡的IP地址的配置文件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> vi /etc/sysconfig/network-scripts/ifcfg-ens33(相应的网卡)</span><br></pre></td></tr></table></figure>
 </li>
-<li><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -u[username] -p[password]</span><br></pre></td></tr></table></figure>
+<li><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">DEVICE=ens33 #描述网卡对应的设备别名，例如ifcfg-ens33的文件中它为ens33</span><br><span class="line"></span><br><span class="line">BOOTPROTO=static #设置网卡获得ip地址的方式，可能的选项为static，dhcp或bootp，分别对应静态指定的 ip地址，通过dhcp协议获得的ip地址，通过bootp协议获得的ip地址</span><br><span class="line"></span><br><span class="line">IPADDR=192.168.1.2 #如果设置网卡获得 ip地址的方式为静态指定，此字段就指定了网卡对应的ip地址</span><br><span class="line"></span><br><span class="line">IPV6INIT=no</span><br><span class="line"></span><br><span class="line">IPV6_AUTOCONF=no</span><br><span class="line"></span><br><span class="line">NETMASK=255.255.255.0 #网卡对应的网络掩码</span><br><span class="line"></span><br><span class="line">NETWORK=192.168.1.0 #网卡对应的网络地址</span><br><span class="line"></span><br><span class="line">ONBOOT=yes #系统启动时是否设置此网络接口，设置为yes时，系统启动时激活此设备</span><br><span class="line"></span><br><span class="line">DNS1=8.8.8.8 #配置DNS服务器</span><br></pre></td></tr></table></figure>
 </li>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">use mysql;</span><br><span class="line">select host from user where user=&apos;root&apos;;</span><br></pre></td></tr></table></figure>
-</li>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update user set host = &apos;%&apos; where user =&apos;root&apos;;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>上面语句的作用是把root用户登陆所使用的IP修改为%，也就是任意IP都可以登陆。<del>当然在实际的生产环境中并不推荐这种方式，应该是具体的某个IP。</del></p>
-</li>
-<li><p>以上情况针对Windows环境中的MySql数据库，如果是Linux环境或者Ubuntu环境，还需要关闭系统防火墙。</p>
-</li>
-<li><p>这样，navicat连接远程数据库的时候，输入数据库的IP地址，用户名，密码就可以正常登陆。<strong>不会再出现Host XXX is not allowed to connect to this MySQL server</strong>了。</p>
+<li><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> service restart network</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<p><strong>have a good time~</strong></p>
+<p><strong>have a good time~~</strong></p>
 
       
       <!-- reward -->
@@ -182,14 +174,14 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2020/03/25/navicat连接远程数据库/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2020/03/26/CentOS7配置静态IP/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Web/">Web</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/服务器配置/">服务器配置</a></li></ul>
 
 
     </footer>
@@ -200,19 +192,10 @@
   
   <nav class="article-nav">
     
+    
       <a href="/2020/03/26/PDF转换WORD神器/" class="article-nav-link">
-        <strong class="article-nav-caption">上一篇</strong>
-        <div class="article-nav-title">
-          
-            PDF转换WORD神器
-          
-        </div>
-      </a>
-    
-    
-      <a href="/2020/03/23/node配置国内镜像源/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">npm配置国内镜像源</div>
+        <div class="article-nav-title">PDF转换WORD神器</div>
       </a>
     
   </nav>
