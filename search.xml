@@ -4,7 +4,40 @@
     <title>Ubuntu18配置Java开发环境</title>
     <url>/2020/03/31/Ubuntu18%E9%85%8D%E7%BD%AEJava%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</url>
     <content><![CDATA[<p>这是一篇关于Ubuntu18配置Java开发环境的文章<a id="more"></a></p>
-<p>之前一直都是在Windows上搞的Java开发，最近有业务需要，需要迁移到Ubuntu机器上，~~记下踩的坑<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">Ubuntu和其他Linux发行版自带的Java是open-jdk，并不是Oracle的那个JDK，因此需要卸载安装JDK。</span><br><span class="line"></span><br><span class="line">1. 找到[Oracle官网](https://www.oracle.com/java/)的[JDK下载链接](https://www.oracle.com/java/technologies/javase-jdk8-downloads.html)</span><br><span class="line"></span><br><span class="line">2. 选择Linux版本的安装包[jdk-8u241-linux-x64.tar.gz](https://www.oracle.com/java/technologies/javase-jdk8-downloads.html#license-lightbox)</span><br><span class="line"></span><br><span class="line">3. ```shell</span><br><span class="line">   sudo wget xxxx.tar.gz</span><br><span class="line">   ```</span><br><span class="line"></span><br><span class="line">4. ```shell</span><br><span class="line">   sudo mkdir /usr/lib/jvm</span><br><span class="line">   sudo tar -xzvf xxxx.tar.gz -C /usr/lib/jvm</span><br><span class="line">   ```</span><br><span class="line"></span><br><span class="line">5. 修改环境变量</span><br><span class="line"></span><br><span class="line">   ```shell</span><br><span class="line">   sudo vi ~/.bashrc</span><br><span class="line">   ```</span><br><span class="line"></span><br><span class="line">   文件末尾追加如下内容：</span><br><span class="line"></span><br><span class="line">   ```shell</span><br><span class="line">   #set oracle jdk environment</span><br><span class="line">   export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_181  ## 这里要注意目录要换成自己解压的jdk 目录</span><br><span class="line">   export JRE_HOME=$&#123;JAVA_HOME&#125;/jre  </span><br><span class="line">   export CLASSPATH=.:$&#123;JAVA_HOME&#125;/lib:$&#123;JRE_HOME&#125;/lib </span><br><span class="line">   export PATH=$&#123;JAVA_HOME&#125;/bin:$PATH  </span><br><span class="line">   </span><br><span class="line">   ```</span><br><span class="line"></span><br><span class="line">   或者：</span><br><span class="line"></span><br><span class="line">   ```shell</span><br><span class="line">   sudo vi /etc/profile</span><br><span class="line">   ```</span><br><span class="line"></span><br><span class="line">   文件末尾追加如下内容：</span><br><span class="line"></span><br><span class="line">   ```shell</span><br><span class="line">   #set oracle jdk environment</span><br><span class="line">   export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_181  ## 这里要注意目录要换成自己解压的jdk 目录</span><br><span class="line">   export JRE_HOME=$&#123;JAVA_HOME&#125;/jre  </span><br><span class="line">   export CLASSPATH=.:$&#123;JAVA_HOME&#125;/lib:$&#123;JRE_HOME&#125;/lib </span><br><span class="line">   export PATH=$&#123;JAVA_HOME&#125;/bin:$PATH  </span><br><span class="line">   ```</span><br><span class="line"></span><br><span class="line">6. 使环境变量生效</span><br><span class="line"></span><br><span class="line">   ```shell</span><br><span class="line">   source ~/.bashrc</span><br><span class="line">   ```</span><br><span class="line"></span><br><span class="line">7. 设置默认JDK</span><br><span class="line"></span><br><span class="line">   ```shell</span><br><span class="line">   sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk1.8.0_181/bin/java 300  </span><br><span class="line">   sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdk1.8.0_181/bin/javac 300  </span><br><span class="line">   sudo update-alternatives --install /usr/bin/jar jar /usr/lib/jvm/jdk1.8.0_181/bin/jar 300   </span><br><span class="line">   sudo update-alternatives --install /usr/bin/javah javah /usr/lib/jvm/jdk1.8.0_181/bin/javah 300   </span><br><span class="line">   sudo update-alternatives --install /usr/bin/javap javap /usr/lib/jvm/jdk1.8.0_181/bin/javap 300 </span><br><span class="line">   ```</span><br><span class="line"></span><br><span class="line">8. ```shell</span><br><span class="line">   sudo update-alternatives --config java</span><br><span class="line">   ```</span><br><span class="line"></span><br><span class="line">9. 测试Java是否安装成功</span><br><span class="line"></span><br><span class="line">   ```shell</span><br><span class="line">   java -version</span><br><span class="line">   javac -version</span><br><span class="line">   ```</span><br><span class="line"></span><br><span class="line">   如果出来一大堆东西的话，那么恭喜你，你的Java环境已经可以用了~ </span><br><span class="line"></span><br><span class="line">   ~~愉快的开发吧</span><br></pre></td></tr></table></figure></p>
+<p>之前一直都是在Windows上搞的Java开发，最近有业务需要，需要迁移到Ubuntu机器上，<del>记下踩的坑</del></p>
+<p>Ubuntu和其他Linux发行版自带的Java是open-jdk，并不是Oracle的那个JDK，因此需要卸载安装JDK。</p>
+<ol>
+<li><p>找到<a href="https://www.oracle.com/java/" target="_blank" rel="noopener">Oracle官网</a>的<a href="https://www.oracle.com/java/technologies/javase-jdk8-downloads.html" target="_blank" rel="noopener">JDK下载链接</a></p>
+</li>
+<li><p>选择Linux版本的安装包<a href="https://www.oracle.com/java/technologies/javase-jdk8-downloads.html#license-lightbox" target="_blank" rel="noopener">jdk-8u241-linux-x64.tar.gz</a></p>
+</li>
+<li><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo wget xxxx.tar.gz</span><br></pre></td></tr></table></figure>
+</li>
+<li><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo mkdir /usr/lib/jvm</span><br><span class="line">sudo tar -xzvf xxxx.tar.gz -C /usr/lib/jvm</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改环境变量</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo vi ~/.bashrc</span><br></pre></td></tr></table></figure>
+<p>文件末尾追加如下内容：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span>set oracle jdk environment</span><br><span class="line">export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_181  ## 这里要注意目录要换成自己解压的jdk 目录</span><br><span class="line">export JRE_HOME=$&#123;JAVA_HOME&#125;/jre  </span><br><span class="line">export CLASSPATH=.:$&#123;JAVA_HOME&#125;/lib:$&#123;JRE_HOME&#125;/lib </span><br><span class="line">export PATH=$&#123;JAVA_HOME&#125;/bin:$PATH</span><br></pre></td></tr></table></figure>
+<p>或者：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo vi /etc/profile</span><br></pre></td></tr></table></figure>
+<p>文件末尾追加如下内容：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span>set oracle jdk environment</span><br><span class="line">export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_181  ## 这里要注意目录要换成自己解压的jdk 目录</span><br><span class="line">export JRE_HOME=$&#123;JAVA_HOME&#125;/jre  </span><br><span class="line">export CLASSPATH=.:$&#123;JAVA_HOME&#125;/lib:$&#123;JRE_HOME&#125;/lib </span><br><span class="line">export PATH=$&#123;JAVA_HOME&#125;/bin:$PATH</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使环境变量生效</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">source ~/.bashrc</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置默认JDK</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk1.8.0_181/bin/java 300  </span><br><span class="line">sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdk1.8.0_181/bin/javac 300  </span><br><span class="line">sudo update-alternatives --install /usr/bin/jar jar /usr/lib/jvm/jdk1.8.0_181/bin/jar 300   </span><br><span class="line">sudo update-alternatives --install /usr/bin/javah javah /usr/lib/jvm/jdk1.8.0_181/bin/javah 300   </span><br><span class="line">sudo update-alternatives --install /usr/bin/javap javap /usr/lib/jvm/jdk1.8.0_181/bin/javap 300</span><br></pre></td></tr></table></figure>
+</li>
+<li><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo update-alternatives --config java</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>测试Java是否安装成功</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">java -version</span><br><span class="line">javac -version</span><br></pre></td></tr></table></figure>
+<p>如果出来一大堆东西的话，那么恭喜你，你的Java环境已经可以用了~ </p>
+<p><del>愉快的开发吧</del>~</p>
+</li>
+</ol>
 <p>   顺带着把tomcat的安装放上</p>
 <ol>
 <li><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wget https://downloads.apache.org/tomcat/tomcat-7/v7.0.103/bin/apache-tomcat-7.0.103.zip</span><br></pre></td></tr></table></figure>
@@ -23,7 +56,7 @@
 <p>这样应该就没问题了~</p>
 </li>
 </ol>
-<p><strong>have a good time~</strong></p>
+<p>   <strong>have a good time~</strong></p>
 ]]></content>
       <categories>
         <category>Ubuntu18</category>
