@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Ubuntu18配置maven环境</title>
+    <url>/2020/04/02/Ubuntu18%E9%85%8D%E7%BD%AEmaven%E7%8E%AF%E5%A2%83/</url>
+    <content><![CDATA[<p>这是一篇关于在Ubuntu18上配置maven的文章<a id="more"></a></p>
+<p>前面的文章已经介绍过maven了，这里对Ubuntu的安装做简要介绍。</p>
+<ol>
+<li><p>去<a href="https://maven.apache.org/download.cgi" target="_blank" rel="noopener">官网</a>下载maven，</p>
+</li>
+<li><p>移动到指定位置</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo mv apache-maven-3.5.3-bin.tar.gz /usr/local/</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>解压</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo tar -zxvf apache-maven-3.5.3-bin.tar.gz</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改全局配置文件</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo vi /etc/profile</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>添加如下配置</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export M2_HOME=/usr/local/apache-maven-3.5.3</span><br><span class="line">export PATH=$&#123;M2_HOME&#125;/bin:$PATH</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使修改的配置立即生效</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>检查是否安装成功</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mvn -v</span><br></pre></td></tr></table></figure>
+<p>如果上面顺利的话，恭喜你maven可以使用了~</p>
+<p>但是事情往往没那么简单</p>
+<p>你可能会看到如下的错误</p>
+<p><strong>maven NB: JAVA_HOME should point to a JDK not a JRE</strong></p>
+<p>不要慌~~</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vi /usr/local/apache-maven-3.5.3/bin/mvn</span><br></pre></td></tr></table></figure>
+<p>修改90行左右，加上</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">JAVA_HOME='/home/jhon/jdk1.8.0_241'</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p><strong>have a good time~~</strong></p>
+]]></content>
+      <categories>
+        <category>Ubuntu18</category>
+      </categories>
+      <tags>
+        <tag>Web</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Ubuntu18配置Tomcat为系统服务</title>
     <url>/2020/04/01/Ubuntu18%E9%85%8D%E7%BD%AETomcat%E4%B8%BA%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/</url>
     <content><![CDATA[<p>这是一篇关于Ubuntu18配置tomcat为系统服务的文章<a id="more"></a></p>

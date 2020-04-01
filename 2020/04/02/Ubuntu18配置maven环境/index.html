@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    Ubuntu18配置Tomcat为系统服务 |  F02c|d&#39;s blog
+    Ubuntu18配置maven环境 |  F02c|d&#39;s blog
   </title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   
@@ -30,14 +30,14 @@
   <div id="app">
     <main class="content">
       <section class="outer">
-  <article id="post-Ubuntu18配置Tomcat为系统服务" class="article article-type-post" itemscope="" itemprop="blogPost" data-scroll-reveal="">
+  <article id="post-Ubuntu18配置maven环境" class="article article-type-post" itemscope="" itemprop="blogPost" data-scroll-reveal="">
 
   <div class="article-inner">
     
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  Ubuntu18配置Tomcat为系统服务
+  Ubuntu18配置maven环境
 </h1>
   
 
@@ -46,8 +46,8 @@
 
     
     <div class="article-meta">
-      <a href="/2020/04/01/Ubuntu18配置Tomcat为系统服务/" class="article-date">
-  <time datetime="2020-04-01T15:43:40.000Z" itemprop="datePublished">2020/04/01 23:43</time>
+      <a href="/2020/04/02/Ubuntu18配置maven环境/" class="article-date">
+  <time datetime="2020-04-01T16:39:00.000Z" itemprop="datePublished">2020/04/02 00:39</time>
 </a>
       
   <div class="article-category">
@@ -61,7 +61,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">210字</span>
+            <span class="post-count">213字</span>
         </span>
     </span>
 
@@ -95,17 +95,36 @@
       
 
       
-      <p>这是一篇关于Ubuntu18配置tomcat为系统服务的文章<a id="more"></a></p>
-<p>最近业务需要，需要在Linux下的tomcat服务器部署应用，每次都需要手动开启，很麻烦，下面把他配置为系统服务。</p>
+      <p>这是一篇关于在Ubuntu18上配置maven的文章<a id="more"></a></p>
+<p>前面的文章已经介绍过maven了，这里对Ubuntu的安装做简要介绍。</p>
 <ol>
-<li><p>在tomcat的bin目录下创建setenv.sh文件</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo vi ~/server/apache-tomcat-9.0.27/bin/setenv.sh</span><br><span class="line">CATALINA_PID="$CATALINA_BASE/tomcat.pid"</span><br></pre></td></tr></table></figure>
+<li><p>去<a href="https://maven.apache.org/download.cgi" target="_blank" rel="noopener">官网</a>下载maven，</p>
 </li>
-<li><p>添加tomcat.service文件</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /lib/systemd/system/tomcat.service</span><br><span class="line">[Unit]</span><br><span class="line">Description=Tomcat</span><br><span class="line">After=network.target remote-fs.target syslog.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">Type=forking</span><br><span class="line">PIDFile=/home/ubuntu/server/apache-tomcat-9.0.27/tomcat.pid</span><br><span class="line">ExecStart=/home/ubuntu/server/apache-tomcat-9.0.27/bin/startup.sh</span><br><span class="line">ExecReload=/bin/kill -s HUP $MAINPID</span><br><span class="line">ExecStop=/bin/kill -s QUIT $MAINPID</span><br><span class="line">PrivateTmp=true</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure>
+<li><p>移动到指定位置</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mv apache-maven-3.5.3-bin.tar.gz /usr/local/</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>重载systemctl守护进程</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span>重载守护进程</span><br><span class="line">systemctl daemon-reload</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span>启动服务</span><br><span class="line">sudo systemctl start tomcat</span><br><span class="line"><span class="meta">#</span>停止服务</span><br><span class="line">sudo systemctl stop tomcat</span><br><span class="line"><span class="meta">#</span>重启服务</span><br><span class="line">sudo systemctl restart tomcat</span><br><span class="line"><span class="meta">#</span>开机自启动</span><br><span class="line">sudo systemctl enable tomcat</span><br><span class="line"><span class="meta">#</span>取消自启动</span><br><span class="line">sudo systemctl disable tomcat</span><br></pre></td></tr></table></figure>
+<li><p>解压</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo tar -zxvf apache-maven-3.5.3-bin.tar.gz</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改全局配置文件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /etc/profile</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>添加如下配置</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export M2_HOME=/usr/local/apache-maven-3.5.3</span><br><span class="line">export PATH=$&#123;M2_HOME&#125;/bin:$PATH</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使修改的配置立即生效</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>检查是否安装成功</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn -v</span><br></pre></td></tr></table></figure>
+<p>如果上面顺利的话，恭喜你maven可以使用了~</p>
+<p>但是事情往往没那么简单</p>
+<p>你可能会看到如下的错误</p>
+<p><strong>maven NB: JAVA_HOME should point to a JDK not a JRE</strong></p>
+<p>不要慌~~</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /usr/local/apache-maven-3.5.3/bin/mvn</span><br></pre></td></tr></table></figure>
+<p>修改90行左右，加上</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">JAVA_HOME='/home/jhon/jdk1.8.0_241'</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <p><strong>have a good time~~</strong></p>
@@ -177,7 +196,7 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2020/04/01/Ubuntu18配置Tomcat为系统服务/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2020/04/02/Ubuntu18配置maven环境/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -195,19 +214,10 @@
   
   <nav class="article-nav">
     
-      <a href="/2020/04/02/Ubuntu18配置maven环境/" class="article-nav-link">
-        <strong class="article-nav-caption">上一篇</strong>
-        <div class="article-nav-title">
-          
-            Ubuntu18配置maven环境
-          
-        </div>
-      </a>
     
-    
-      <a href="/2020/03/31/Ubuntu18配置Java开发环境/" class="article-nav-link">
+      <a href="/2020/04/01/Ubuntu18配置Tomcat为系统服务/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">Ubuntu18配置Java开发环境</div>
+        <div class="article-nav-title">Ubuntu18配置Tomcat为系统服务</div>
       </a>
     
   </nav>
