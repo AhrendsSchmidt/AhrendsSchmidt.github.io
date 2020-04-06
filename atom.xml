@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>F02c|d&#39;s blog</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2020-04-01T16:56:18.049Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>John Han</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ubuntu18配置maven环境</title>
+    <link href="http://yoursite.com/2020/04/02/Ubuntu18%E9%85%8D%E7%BD%AEmaven%E7%8E%AF%E5%A2%83/"/>
+    <id>http://yoursite.com/2020/04/02/Ubuntu18%E9%85%8D%E7%BD%AEmaven%E7%8E%AF%E5%A2%83/</id>
+    <published>2020-04-01T16:39:00.000Z</published>
+    <updated>2020-04-01T16:56:18.049Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这是一篇关于在Ubuntu18上配置maven的文章
+    
+    </summary>
+    
+    
+      <category term="Ubuntu18" scheme="http://yoursite.com/categories/Ubuntu18/"/>
+    
+    
+      <category term="Web" scheme="http://yoursite.com/tags/Web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu18配置Tomcat为系统服务</title>
+    <link href="http://yoursite.com/2020/04/01/Ubuntu18%E9%85%8D%E7%BD%AETomcat%E4%B8%BA%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/"/>
+    <id>http://yoursite.com/2020/04/01/Ubuntu18%E9%85%8D%E7%BD%AETomcat%E4%B8%BA%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/</id>
+    <published>2020-04-01T15:43:40.000Z</published>
+    <updated>2020-04-01T15:54:47.729Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这是一篇关于Ubuntu18配置tomcat为系统服务的文章
+    
+    </summary>
+    
+    
+      <category term="Ubuntu18" scheme="http://yoursite.com/categories/Ubuntu18/"/>
+    
+    
+      <category term="Web" scheme="http://yoursite.com/tags/Web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu18配置Java开发环境</title>
+    <link href="http://yoursite.com/2020/03/31/Ubuntu18%E9%85%8D%E7%BD%AEJava%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
+    <id>http://yoursite.com/2020/03/31/Ubuntu18%E9%85%8D%E7%BD%AEJava%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</id>
+    <published>2020-03-31T12:49:00.000Z</published>
+    <updated>2020-03-31T14:09:08.026Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这是一篇关于Ubuntu18配置Java开发环境的文章
+    
+    </summary>
+    
+    
+      <category term="Ubuntu18" scheme="http://yoursite.com/categories/Ubuntu18/"/>
+    
+    
+      <category term="Web" scheme="http://yoursite.com/tags/Web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS7配置静态IP</title>
+    <link href="http://yoursite.com/2020/03/26/CentOS7%E9%85%8D%E7%BD%AE%E9%9D%99%E6%80%81IP/"/>
+    <id>http://yoursite.com/2020/03/26/CentOS7%E9%85%8D%E7%BD%AE%E9%9D%99%E6%80%81IP/</id>
+    <published>2020-03-26T15:44:29.000Z</published>
+    <updated>2020-03-26T15:55:25.700Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这是一篇关于centOS7配置静态IP的文章
+    
+    </summary>
+    
+    
+      <category term="centOS7 setting" scheme="http://yoursite.com/categories/centOS7-setting/"/>
+    
+    
+      <category term="服务器配置" scheme="http://yoursite.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PDF转换WORD神器</title>
+    <link href="http://yoursite.com/2020/03/26/PDF%E8%BD%AC%E6%8D%A2WORD%E7%A5%9E%E5%99%A8/"/>
+    <id>http://yoursite.com/2020/03/26/PDF%E8%BD%AC%E6%8D%A2WORD%E7%A5%9E%E5%99%A8/</id>
+    <published>2020-03-26T15:29:23.000Z</published>
+    <updated>2020-03-26T15:42:39.326Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天给大家安利一款PDF转WORD的神器
+    
+    </summary>
+    
+    
+      <category term="资源分享" scheme="http://yoursite.com/categories/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="share" scheme="http://yoursite.com/tags/share/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>navicat连接远程数据库</title>
+    <link href="http://yoursite.com/2020/03/25/navicat%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <id>http://yoursite.com/2020/03/25/navicat%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E6%95%B0%E6%8D%AE%E5%BA%93/</id>
+    <published>2020-03-25T11:02:53.000Z</published>
+    <updated>2020-03-25T11:35:41.360Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这是一篇关于navicat连接远程数据库的教程
+    
+    </summary>
+    
+    
+      <category term="Web后端开发" scheme="http://yoursite.com/categories/Web%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="Web" scheme="http://yoursite.com/tags/Web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>npm配置国内镜像源</title>
+    <link href="http://yoursite.com/2020/03/23/node%E9%85%8D%E7%BD%AE%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%BA%90/"/>
+    <id>http://yoursite.com/2020/03/23/node%E9%85%8D%E7%BD%AE%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%BA%90/</id>
+    <published>2020-03-23T01:54:15.000Z</published>
+    <updated>2020-04-06T15:33:20.796Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这是一篇关于npm配置的文章
+    
+    </summary>
+    
+    
+      <category term="Web前端开发" scheme="http://yoursite.com/categories/Web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="Web" scheme="http://yoursite.com/tags/Web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Maven配置国内阿里云镜像</title>
+    <link href="http://yoursite.com/2020/03/23/Maven%E9%85%8D%E7%BD%AE%E5%9B%BD%E5%86%85%E9%98%BF%E9%87%8C%E4%BA%91%E9%95%9C%E5%83%8F/"/>
+    <id>http://yoursite.com/2020/03/23/Maven%E9%85%8D%E7%BD%AE%E5%9B%BD%E5%86%85%E9%98%BF%E9%87%8C%E4%BA%91%E9%95%9C%E5%83%8F/</id>
+    <published>2020-03-23T01:14:20.000Z</published>
+    <updated>2020-03-23T02:44:26.544Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这是一篇关于Maven配置的介绍
+    
+    </summary>
+    
+    
+      <category term="Web后端开发" scheme="http://yoursite.com/categories/Web%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="Web" scheme="http://yoursite.com/tags/Web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>github博客失联肿么办~</title>
+    <link href="http://yoursite.com/2020/03/21/github%E5%8D%9A%E5%AE%A2%E5%A4%B1%E8%81%94%E8%82%BF%E4%B9%88%E5%8A%9E/"/>
+    <id>http://yoursite.com/2020/03/21/github%E5%8D%9A%E5%AE%A2%E5%A4%B1%E8%81%94%E8%82%BF%E4%B9%88%E5%8A%9E/</id>
+    <published>2020-03-21T05:40:34.563Z</published>
+    <updated>2018-01-01T04:00:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;你有没有这种经历，电脑被格式化了，之前生成的github的公钥没了，和github远程仓库就此失联了？
+    
+    </summary>
+    
+    
+      <category term="那些年踩过的坑" scheme="http://yoursite.com/categories/%E9%82%A3%E4%BA%9B%E5%B9%B4%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91/"/>
+    
+    
+      <category term="踩坑日志" scheme="http://yoursite.com/tags/%E8%B8%A9%E5%9D%91%E6%97%A5%E5%BF%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://yoursite.com/2020/03/21/test/"/>
+    <id>http://yoursite.com/2020/03/21/test/</id>
+    <published>2020-03-20T18:54:37.000Z</published>
+    <updated>2020-03-20T19:18:01.224Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;时隔好久，博客再次满血复活，哈哈哈哈哈&lt;/strong&gt;
+    
+    </summary>
+    
+    
+      <category term="test" scheme="http://yoursite.com/categories/test/"/>
+    
+    
+      <category term="博客测试" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>渗透测试之工具篇-2</title>
+    <link href="http://yoursite.com/2019/03/20/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%B9%8B%E5%B7%A5%E5%85%B7%E7%AF%87-2/"/>
+    <id>http://yoursite.com/2019/03/20/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%B9%8B%E5%B7%A5%E5%85%B7%E7%AF%87-2/</id>
+    <published>2019-03-20T08:52:50.000Z</published>
+    <updated>2019-03-20T08:53:20.029Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="网络安全" scheme="http://yoursite.com/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    
+    
+      <category term="Penetration test" scheme="http://yoursite.com/tags/Penetration-test/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>渗透测试-xss安全汇总</title>
+    <link href="http://yoursite.com/2019/02/23/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95-xss%E5%AE%89%E5%85%A8%E6%B1%87%E6%80%BB/"/>
+    <id>http://yoursite.com/2019/02/23/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95-xss%E5%AE%89%E5%85%A8%E6%B1%87%E6%80%BB/</id>
+    <published>2019-02-22T16:52:52.000Z</published>
+    <updated>2019-02-22T16:57:52.744Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;xss老漏洞了，危害可大可小。：）&quot;&gt;&lt;a href=&quot;#xss老漏洞了，危害可大可小。：）&quot; class=&quot;headerlink&quot; title=&quot;xss老漏洞了，危害可大可小。：）&quot;&gt;&lt;/a&gt;xss老漏洞了，危害可大可小。：）&lt;/h2&gt;
+    
+    </summary>
+    
+    
+      <category term="网络安全" scheme="http://yoursite.com/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    
+    
+      <category term="Penetration test" scheme="http://yoursite.com/tags/Penetration-test/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>渗透测试-xml安全汇总</title>
+    <link href="http://yoursite.com/2019/02/23/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95-xml%E5%AE%89%E5%85%A8%E6%B1%87%E6%80%BB/"/>
+    <id>http://yoursite.com/2019/02/23/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95-xml%E5%AE%89%E5%85%A8%E6%B1%87%E6%80%BB/</id>
+    <published>2019-02-22T16:38:31.000Z</published>
+    <updated>2019-02-22T16:50:49.555Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;以下思维图是专门针对xml安全的，图中详细介绍了什么是xml-以及存在什么样的漏洞和危害等及如何利用。：&quot;&gt;&lt;a href=&quot;#以下思维图是专门针对xml安全的，图中详细介绍了什么是xml-以及存在什么样的漏洞和危害等及如何利用。：&quot; class=&quot;headerlink&quot; title=&quot;以下思维图是专门针对xml安全的，图中详细介绍了什么是xml,以及存在什么样的漏洞和危害等及如何利用。：)&quot;&gt;&lt;/a&gt;以下思维图是专门针对xml安全的，图中详细介绍了什么是xml,以及存在什么样的漏洞和危害等及如何利用。：)&lt;/h2&gt;
+    
+    </summary>
+    
+    
+      <category term="网络安全" scheme="http://yoursite.com/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    
+    
+      <category term="Penetration test" scheme="http://yoursite.com/tags/Penetration-test/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>渗透测试-Web安全脑图</title>
+    <link href="http://yoursite.com/2019/02/23/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95-Web%E5%AE%89%E5%85%A8%E8%84%91%E5%9B%BE/"/>
+    <id>http://yoursite.com/2019/02/23/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95-Web%E5%AE%89%E5%85%A8%E8%84%91%E5%9B%BE/</id>
+    <published>2019-02-22T16:17:22.000Z</published>
+    <updated>2019-02-22T17:07:15.066Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;以下是我收集的Web安全方面的思维导图，帮助对网站进行全面的测试。&quot;&gt;&lt;a href=&quot;#以下是我收集的Web安全方面的思维导图，帮助对网站进行全面的测试。&quot; class=&quot;headerlink&quot; title=&quot;以下是我收集的Web安全方面的思维导图，帮助对网站进行全面的测试。&quot;&gt;&lt;/a&gt;以下是我收集的Web安全方面的思维导图，帮助对网站进行全面的测试。&lt;/h2&gt;
+    
+    </summary>
+    
+    
+      <category term="网络安全" scheme="http://yoursite.com/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    
+    
+      <category term="Penetration test" scheme="http://yoursite.com/tags/Penetration-test/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习入门(python基础-2)</title>
+    <link href="http://yoursite.com/2019/02/09/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8-python%E5%9F%BA%E7%A1%80-2/"/>
+    <id>http://yoursite.com/2019/02/09/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8-python%E5%9F%BA%E7%A1%80-2/</id>
+    <published>2019-02-09T04:05:16.000Z</published>
+    <updated>2019-03-20T08:52:59.721Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1-Python条件语句&quot;&gt;&lt;a href=&quot;#1-Python条件语句&quot; class=&quot;headerlink&quot; title=&quot;1.Python条件语句&quot;&gt;&lt;/a&gt;1.Python条件语句&lt;/h2&gt;&lt;p&gt;Python条件语句是通过一条或多条语句的执行结果（True或者False）来决定执行的代码块。&lt;br&gt;Python程序语言指定任何非0和非空（null）值为true，0 或者 null为false。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Machine learning" scheme="http://yoursite.com/categories/Machine-learning/"/>
+    
+    
+      <category term="Machine learning" scheme="http://yoursite.com/tags/Machine-learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习入门(python基础-1)</title>
+    <link href="http://yoursite.com/2019/02/08/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8-python%E5%9F%BA%E7%A1%80/"/>
+    <id>http://yoursite.com/2019/02/08/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8-python%E5%9F%BA%E7%A1%80/</id>
+    <published>2019-02-08T11:16:47.000Z</published>
+    <updated>2019-03-17T07:11:54.632Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1-Python是什么&quot;&gt;&lt;a href=&quot;#1-Python是什么&quot; class=&quot;headerlink&quot; title=&quot;1.Python是什么&quot;&gt;&lt;/a&gt;1.Python是什么&lt;/h2&gt;&lt;p&gt;​    Python是一个简单、易读、易记的编程语言，而且是开源的，可以免 费地自由使用。Python可以用类似英语的语法编写程序，编译起来也不费 力，因此我们可以很轻松地使用Python。
+    
+    </summary>
+    
+    
+      <category term="Machine learning" scheme="http://yoursite.com/categories/Machine-learning/"/>
+    
+    
+      <category term="Machine learning" scheme="http://yoursite.com/tags/Machine-learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>渗透测试之工具篇(1)</title>
+    <link href="http://yoursite.com/2019/02/07/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%B9%8B%E5%B7%A5%E5%85%B7%E7%AF%87-1/"/>
+    <id>http://yoursite.com/2019/02/07/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%B9%8B%E5%B7%A5%E5%85%B7%E7%AF%87-1/</id>
+    <published>2019-02-07T12:49:02.000Z</published>
+    <updated>2019-02-08T09:37:38.472Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;俗话说，不想当将军的士兵不是好厨子。&lt;/strong&gt;一个优秀的渗透测试人员，一定会有那么几大杀器，达到事半功倍的效果。
+    
+    </summary>
+    
+    
+      <category term="网络安全" scheme="http://yoursite.com/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    
+    
+      <category term="Penetration test" scheme="http://yoursite.com/tags/Penetration-test/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>安卓开发-环境配置(解决Gradle包报错问题)</title>
+    <link href="http://yoursite.com/2019/02/07/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    <id>http://yoursite.com/2019/02/07/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</id>
+    <published>2019-02-07T09:27:59.000Z</published>
+    <updated>2019-02-08T06:33:50.085Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;上一篇已经给出了安卓开发的学习路线。俗话说的好，工欲善其事必先利其器，所以我们开始着手准备开发工具。
+    
+    </summary>
+    
+    
+      <category term="Android开发" scheme="http://yoursite.com/categories/Android%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习</title>
+    <link href="http://yoursite.com/2019/02/06/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://yoursite.com/2019/02/06/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</id>
+    <published>2019-02-06T14:45:29.000Z</published>
+    <updated>2019-02-08T11:36:04.470Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Brief Introduction：最近这几年IT界什么最火，机器学习啊。笔者算是也在学习机器学习吧，无奈实在有点难度，数学知识跟不上，学了好久丝毫没有进展。
+    
+    </summary>
+    
+    
+      <category term="Machine learning" scheme="http://yoursite.com/categories/Machine-learning/"/>
+    
+    
+      <category term="Machine learning" scheme="http://yoursite.com/tags/Machine-learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>安卓开发-学习框架</title>
+    <link href="http://yoursite.com/2019/02/06/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91-%E5%AD%A6%E4%B9%A0%E6%A1%86%E6%9E%B6/"/>
+    <id>http://yoursite.com/2019/02/06/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91-%E5%AD%A6%E4%B9%A0%E6%A1%86%E6%9E%B6/</id>
+    <published>2019-02-06T14:25:58.000Z</published>
+    <updated>2019-02-08T06:33:39.971Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这算是我入门安卓开发的唯一的资料了。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Android开发" scheme="http://yoursite.com/categories/Android%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
+    
+  </entry>
+  
+</feed>
