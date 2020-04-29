@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    Ubuntu18配置maven环境 |  F02c|d&#39;s blog
+    docker usage |  F02c|d&#39;s blog
   </title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   
@@ -31,14 +31,14 @@
   <div id="app">
     <main class="content">
       <section class="outer">
-  <article id="post-Ubuntu18配置maven环境" class="article article-type-post" itemscope="" itemprop="blogPost" data-scroll-reveal="">
+  <article id="post-docker-usage" class="article article-type-post" itemscope="" itemprop="blogPost" data-scroll-reveal="">
 
   <div class="article-inner">
     
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  Ubuntu18配置maven环境
+  docker usage
 </h1>
   
 
@@ -47,12 +47,12 @@
 
     
     <div class="article-meta">
-      <a href="/2020/04/02/Ubuntu18配置maven环境/" class="article-date">
-  <time datetime="2020-04-01T16:39:00.000Z" itemprop="datePublished">2020/04/02 00:39</time>
+      <a href="/2020/04/29/docker-usage/" class="article-date">
+  <time datetime="2020-04-29T15:46:27.000Z" itemprop="datePublished">2020/04/29 23:46</time>
 </a>
       
   <div class="article-category">
-    <a class="article-category-link" href="/categories/Ubuntu18/">Ubuntu18</a>
+    <a class="article-category-link" href="/categories/docker/">docker</a>
   </div>
 
       
@@ -62,7 +62,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">213字</span>
+            <span class="post-count">487字</span>
         </span>
     </span>
 
@@ -96,39 +96,29 @@
       
 
       
-      <p>这是一篇关于在Ubuntu18上配置maven的文章<a id="more"></a></p>
-<p>前面的文章已经介绍过maven了，这里对Ubuntu的安装做简要介绍。</p>
-<ol>
-<li><p>去<a href="https://maven.apache.org/download.cgi" target="_blank" rel="noopener">官网</a>下载maven，</p>
-</li>
-<li><p>移动到指定位置</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mv apache-maven-3.5.3-bin.tar.gz /usr/local/</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>解压</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo tar -zxvf apache-maven-3.5.3-bin.tar.gz</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>修改全局配置文件</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /etc/profile</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>添加如下配置</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export M2_HOME=/usr/local/apache-maven-3.5.3</span><br><span class="line">export PATH=$&#123;M2_HOME&#125;/bin:$PATH</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>使修改的配置立即生效</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>检查是否安装成功</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn -v</span><br></pre></td></tr></table></figure>
-<p>如果上面顺利的话，恭喜你maven可以使用了~</p>
-<p>但是事情往往没那么简单</p>
-<p>你可能会看到如下的错误</p>
-<p><strong>maven NB: JAVA_HOME should point to a JDK not a JRE</strong></p>
-<p>不要慌~~</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /usr/local/apache-maven-3.5.3/bin/mvn</span><br></pre></td></tr></table></figure>
-<p>修改90行左右，加上</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">JAVA_HOME='/home/jhon/jdk1.8.0_241'</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p><strong>have a good time~~</strong></p>
+      <p>这是一篇关于docker容器操作的文章<a id="more"></a></p>
+<p>docker大家肯定都不陌生，堪称神器。关于他的介绍就不啰嗦了，直接开始梭哈~</p>
+<p>docker的官方镜像地址在国外，假如在国内访问的话，速度会比较慢，因此我们需要配置国内镜像加速。</p>
+<p>Docker可以配置的国内镜像有很多可供选择，比如说：阿里云，网易蜂巢，DaoCloud，Docker中国区官方镜像等，这些都是可以提供给大家随意选择的不错的镜像仓库。</p>
+<p>在这里我们选择阿里云的镜像加速：</p>
+<p>打开<a href="https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors" target="_blank" rel="noopener">阿里云的镜像加速网站</a>，点击“镜像中心”-&gt;“镜像加速器”</p>
+<p>按照官方的配置方法进行配置：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">sudo mkdir -p /etc/docker</span><br><span class="line">sudo tee /etc/docker/daemon.json &lt;&lt;-'EOF'</span><br><span class="line">&#123;</span><br><span class="line">  "registry-mirrors": ["https://xxxxx.mirror.aliyuncs.com"]</span><br><span class="line">&#125;</span><br><span class="line">EOF</span><br><span class="line">sudo systemctl daemon-reload</span><br><span class="line">sudo systemctl restart docker</span><br></pre></td></tr></table></figure>
+<p>这样的话，再去pull镜像的话，就不会很慢了。</p>
+<p>docker的一些常用操作：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">docker search 镜像名称 <span class="comment">#查找镜像</span></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">docker pull 镜像名称	<span class="comment">#拉取镜像</span></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">docker images		   <span class="comment">#查看已有镜像</span></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">docker run -itd -p8080:80 镜像名称	<span class="comment">#docker从镜像后台运行出来一个容器，并将容器的80端口映射到宿主机的8080端口</span></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">docker ps -a	<span class="comment">#列出所有的容器</span></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">docker ps		<span class="comment">#列出正在运行的容器</span></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">docker <span class="built_in">exec</span> -it 容器名称 /bin/bash</span></span><br><span class="line"><span class="meta">#</span><span class="bash">docker attach 容器名称				<span class="comment">#进入一个正在运行的容器</span></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">docker cp /宿主机文件目录 容器名称:/容器文件目录	<span class="comment">#docker拷贝文件 </span></span></span><br><span class="line"><span class="meta">#</span><span class="bash">docker cp 容器名称:/容器文件目录 /宿主机文件目录	<span class="comment">#docker下载文件</span></span></span><br></pre></td></tr></table></figure>
+<p>依赖于docker的另一个神器：docker-compose，基于docker-compose.yml文件运行</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">docker-compose build	<span class="comment">#构建镜像</span></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">docker-compose up -d	<span class="comment">#后台运行一个指定的容器</span></span></span><br></pre></td></tr></table></figure>
+<p>以上就是关于docker常规使用的一些介绍了~</p>
+<p><strong>have a good time~</strong></p>
 
       
       <!-- reward -->
@@ -197,14 +187,14 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://pwn0x01.github.io/2020/04/02/Ubuntu18配置maven环境/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://pwn0x01.github.io/2020/04/29/docker-usage/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Web/">Web</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/docker/">docker</a></li></ul>
 
 
     </footer>
@@ -215,19 +205,10 @@
   
   <nav class="article-nav">
     
-      <a href="/2020/04/29/docker-usage/" class="article-nav-link">
-        <strong class="article-nav-caption">上一篇</strong>
-        <div class="article-nav-title">
-          
-            docker usage
-          
-        </div>
-      </a>
     
-    
-      <a href="/2020/04/01/Ubuntu18配置Tomcat为系统服务/" class="article-nav-link">
+      <a href="/2020/04/02/Ubuntu18配置maven环境/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">Ubuntu18配置Tomcat为系统服务</div>
+        <div class="article-nav-title">Ubuntu18配置maven环境</div>
       </a>
     
   </nav>
