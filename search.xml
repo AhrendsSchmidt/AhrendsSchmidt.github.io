@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>eclipse配置springboot插件</title>
+    <url>/2020/04/30/eclipse%E9%85%8D%E7%BD%AEspringboot%E6%8F%92%E4%BB%B6/</url>
+    <content><![CDATA[<p>这是一篇关于如何配置eclipse spring boot插件的文章<a id="more"></a></p>
+<p>IDEA，大家众所周知的Java企业级应用开发神器。<del>但是有一点不好的是，对配置低的电脑不友好</del>，那么配置低的电脑还想开发spring boot的话，就需要安装这款插件了。打开eclipse，在插件市场就可以找到安装，但是有80%的几率你是安装失败的。</p>
+<p><strong>follow me~</strong></p>
+<p>如果进度条很慢并且最后也提示错误的话：</p>
+<p><img src="https://s1.ax1x.com/2020/04/30/JH00oQ.png" alt="JH00oQ.png"></p>
+<p>然后再去：</p>
+<p><img src="https://s1.ax1x.com/2020/04/30/JH0rJs.png" alt="JH0rJs.png"></p>
+<p>傻瓜式下一步下一步即可</p>
+<p>安装成功后重启eclipse</p>
+<p>如果重启后出现下图问题</p>
+<p><img src="https://s1.ax1x.com/2020/04/30/JH0wdg.png" alt="JH0wdg.png"></p>
+<p>找到自己的java 的安装路径将jdk下 的lib下的tools.jar</p>
+<p><img src="https://s1.ax1x.com/2020/04/30/JH0yzq.png" alt="JH0yzq.png"></p>
+<p>放到jre下的lib下</p>
+<p><img src="https://s1.ax1x.com/2020/04/30/JH0cQ0.png" alt="JH0cQ0.png"></p>
+<p>ok</p>
+<p>或者  重启eclipse  多试几次</p>
+<p><strong>have a good time~</strong></p>
+]]></content>
+      <categories>
+        <category>Web后端开发</category>
+      </categories>
+      <tags>
+        <tag>Web</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>docker usage</title>
     <url>/2020/04/29/docker-usage/</url>
     <content><![CDATA[<p>这是一篇关于docker容器操作的文章<a id="more"></a></p>

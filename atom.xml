@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pwn0x01.github.io/"/>
-  <updated>2020-04-29T16:20:59.593Z</updated>
+  <updated>2020-04-29T16:55:01.455Z</updated>
   <id>https://pwn0x01.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>eclipse配置springboot插件</title>
+    <link href="https://pwn0x01.github.io/2020/04/30/eclipse%E9%85%8D%E7%BD%AEspringboot%E6%8F%92%E4%BB%B6/"/>
+    <id>https://pwn0x01.github.io/2020/04/30/eclipse%E9%85%8D%E7%BD%AEspringboot%E6%8F%92%E4%BB%B6/</id>
+    <published>2020-04-29T16:35:27.000Z</published>
+    <updated>2020-04-29T16:55:01.455Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这是一篇关于如何配置eclipse spring boot插件的文章
+    
+    </summary>
+    
+    
+      <category term="Web后端开发" scheme="https://pwn0x01.github.io/categories/Web%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="Web" scheme="https://pwn0x01.github.io/tags/Web/"/>
+    
+  </entry>
   
   <entry>
     <title>docker usage</title>
@@ -410,27 +431,6 @@
     
     
       <category term="Android" scheme="https://pwn0x01.github.io/tags/Android/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>机器学习</title>
-    <link href="https://pwn0x01.github.io/2019/02/06/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    <id>https://pwn0x01.github.io/2019/02/06/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</id>
-    <published>2019-02-06T14:45:29.000Z</published>
-    <updated>2019-02-08T11:36:04.470Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Brief Introduction：最近这几年IT界什么最火，机器学习啊。笔者算是也在学习机器学习吧，无奈实在有点难度，数学知识跟不上，学了好久丝毫没有进展。
-    
-    </summary>
-    
-    
-      <category term="Machine learning" scheme="https://pwn0x01.github.io/categories/Machine-learning/"/>
-    
-    
-      <category term="Machine learning" scheme="https://pwn0x01.github.io/tags/Machine-learning/"/>
     
   </entry>
   
