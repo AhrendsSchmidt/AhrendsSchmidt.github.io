@@ -353,9 +353,15 @@
       </tags>
   </entry>
   <entry>
-    <title>渗透测试之工具篇-2</title>
-    <url>/2019/03/20/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%B9%8B%E5%B7%A5%E5%85%B7%E7%AF%87-2/</url>
-    <content><![CDATA[]]></content>
+    <title>渗透测试之内网篇(1)</title>
+    <url>/2019/03/20/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%B9%8B%E5%86%85%E7%BD%91%E7%AF%87-1/</url>
+    <content><![CDATA[<p>简要介绍一下内网渗透过程中，常用的手法<a id="more"></a></p>
+<p>在内网渗透的过程中，端口转发以及使用代理是非常重要的一步，将内网中的服务映射到公网中，使攻击者可以访问到内网的业务层。</p>
+<p>借大哥的一张图来说明这一切：</p>
+<p><img src="https://s1.ax1x.com/2020/05/01/JXxp6S.png" alt="JXxp6S.png"></p>
+<p>后续会详细介绍，各种工具的使用。<del>其实就是懒，不会咕咕咕的</del></p>
+<p>have a good time~</p>
+]]></content>
       <categories>
         <category>网络安全</category>
       </categories>
